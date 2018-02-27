@@ -1,0 +1,26 @@
+@mixin full-size{
+    width:100%;
+    height:100%;
+}
+@mixin clear-margin{
+    margin: 0 auto;
+    color:black;
+}
+@mixin custom-font($color,$size,$weight:null,$font:null){
+    color:$color;
+    font-size:$size;
+    font-weight:$weight;
+    font-family:$font;
+}
+@mixin middle-position(){
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
+@mixin middle-bottom-position($bottom:0){
+    position:absolute;
+    bottom:$bottom;
+    left:50%;
+    transform:translateX(-50%)
+}
