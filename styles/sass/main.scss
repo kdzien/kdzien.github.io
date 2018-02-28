@@ -11,3 +11,6 @@ body{
 .section-header{
     @include title-font($background-color,30px)
 }
+.white{
+    color:white;
+}
