@@ -4,13 +4,30 @@
 }
 @mixin clear-margin{
     margin: 0 auto;
-    color:black;
 }
+@mixin clear-padding{
+    padding:0;
+}
+
 @mixin custom-font($color,$size,$weight:null,$font:null){
     color:$color;
     font-size:$size;
     font-weight:$weight;
     font-family:$font;
+}
+
+@mixin title-font($color:$first-color,$size:52){
+    color:$color;
+    font-size:$size;
+    letter-spacing:6px;
+    font-weight:300;
+    @include title-position()
+}
+
+@mixin title-position(){
+    text-align:center;
+    padding: 40px 40px;
+    width:100%;
 }
 @mixin middle-position(){
     position:absolute;

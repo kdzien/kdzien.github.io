@@ -1,43 +1,21 @@
 body {
   margin: 0 auto;
-  color: black;
-  font-family: "Muli", sans-serif; }
+  font-family: "Muli", sans-serif !important; }
 
-#welcome {
-  width: 100%;
-  height: 100%;
-  background-color: #212121; }
-  #welcome #head {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-    #welcome #head span {
-      color: #cccccc; }
-    #welcome #head h1 {
-      margin: 0 auto;
-      color: black;
-      color: #e4173e;
-      font-size: 78px;
-      font-weight: 300;
-      font-family: "Muli", sans-serif; }
-    #welcome #head h3 {
-      color: white;
-      font-size: 24px;
-      font-weight: 300;
-      font-family: "Muli", sans-serif; }
-  #welcome #in-icon {
-    position: absolute;
-    bottom: 20;
-    left: 50%;
-    transform: translateX(-50%); }
-    #welcome #in-icon i {
-      color: #e4173e;
-      font-size: 80px; }
-      #welcome #in-icon i:first-child {
-        position: absolute;
-        bottom: 18;
-        left: 50%;
-        transform: translateX(-50%);
-        color: white; }
+.title {
+  color: #e4173e;
+  font-size: 52;
+  letter-spacing: 6px;
+  font-weight: 300;
+  text-align: center;
+  padding: 40px 40px;
+  width: 100%; }
+
+.section-header {
+  color: #212121;
+  font-size: 30px;
+  letter-spacing: 6px;
+  font-weight: 300;
+  text-align: center;
+  padding: 40px 40px;
+  width: 100%; }

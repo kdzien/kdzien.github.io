@@ -1,0 +1,28 @@
+#about {
+  height: auto;
+  margin-bottom: 40px; }
+  #about #about-wrapper {
+    display: flex; }
+    #about #about-wrapper #experience-body, #about #about-wrapper #learn-body {
+      width: 50%; }
+      #about #about-wrapper #experience-body ul, #about #about-wrapper #learn-body ul {
+        padding: 0;
+        list-style: none;
+        width: 400px;
+        margin: 0 auto; }
+        #about #about-wrapper #experience-body ul li, #about #about-wrapper #learn-body ul li {
+          position: relative;
+          border-left: solid #e4173e;
+          padding-left: 20px; }
+          #about #about-wrapper #experience-body ul li:before, #about #about-wrapper #learn-body ul li:before {
+            content: '';
+            border: solid 2px #e4173e;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            left: -8.5;
+            background-color: white; }
+          #about #about-wrapper #experience-body ul li p, #about #about-wrapper #learn-body ul li p {
+            margin: 0 auto;
+            padding-bottom: 10px; }

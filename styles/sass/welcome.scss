@@ -1,0 +1,29 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+#welcome{
+    @include full-size();
+    background-color:$background-color;
+    #head{
+        @include middle-position();
+        text-align:center;
+        span{color:#cccccc}
+        h1{
+            @include clear-margin();
+            @include custom-font($first-color,78px,300,$head-font)
+        }
+        h3{
+            @include custom-font(white,24px,300,$head-font)
+        }
+    }
+    #in-icon{
+        @include middle-bottom-position(20);
+        i{
+            @include custom-font($first-color,80px);
+            &:first-child{
+                @include middle-bottom-position(18);
+                color:white;
+            }
+        }
+    }
+}
