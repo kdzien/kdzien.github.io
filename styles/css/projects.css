@@ -1,5 +1,5 @@
 #projects {
-  background-color: #e4173e; }
+  background-color: #212121; }
   #projects #projects-wrapper {
     width: 100%;
     height: auto;
@@ -7,13 +7,14 @@
     flex-wrap: wrap; }
     #projects #projects-wrapper .project-small {
       flex: 0 0 33.333%;
-      height: 350px;
-      background-size: 100%;
+      height: 23vw;
+      background-size: cover;
       background-color: white;
       background-repeat: no-repeat;
       background-position: center; }
       #projects #projects-wrapper .project-small.first {
-        background-image: url("../../images/easyshopping.png"); }
+        background-image: url("../../images/easyshopping.png");
+        flex: 0 0 66.666%; }
       #projects #projects-wrapper .project-small.second {
         background-image: url("../../images/onlywins.png"); }
       #projects #projects-wrapper .project-small.third {

@@ -2,7 +2,27 @@
 @import 'mixins.scss';
 
 #technologies{
-    
-    background-color:$background-color;
+    background: linear-gradient(rgba(228, 23, 62, 0.4), rgba(228, 23, 62, 0.4)), url("../../images/tech-bcg.png") no-repeat;
+    background-size:cover;
     height:auto;
+    .technologies-wrapper{
+        margin:50px 200px;
+        .row{
+            justify-content:center;
+            display:flex;
+            
+            width:100%;
+            .tech{
+                flex-wrap:row wrap;
+                margin:0px 50px;
+                // padding:20px 20px;
+                width:100px;height:100px;
+                transform:rotate(45deg);
+                // @include custom-font(white,22px,400);
+                background-color:transparentize($first-color, 0.3) 
+                
+            }           
+       }
+    }
+
 }

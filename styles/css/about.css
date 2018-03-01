@@ -11,7 +11,10 @@
         left: 50%;
         transform: translate(-50%, -50%);
         color: #212121;
-        font-size: 136px; }
+        font-size: 136px;
+        background: linear-gradient(to bottom right, #e4173e, #ea2b4f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
       #about #about-wrapper #experience-body ul, #about #about-wrapper #learn-body ul, #about #about-wrapper .break-info ul {
         padding: 0;
         list-style: none;
@@ -36,7 +39,3 @@
             padding-bottom: 10px; }
           #about #about-wrapper #experience-body ul li:last-child p:last-child, #about #about-wrapper #learn-body ul li:last-child p:last-child, #about #about-wrapper .break-info ul li:last-child p:last-child {
             padding-bottom: 0; }
-    #about #about-wrapper .break-info {
-      background: linear-gradient(to top left, #e4173e, #ea2b4f); }
-      #about #about-wrapper .break-info:first-child {
-        background: linear-gradient(to bottom right, #e4173e, #ea2b4f); }

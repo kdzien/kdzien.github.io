@@ -8,8 +8,11 @@
         flex-wrap:wrap;
         #experience-body,#learn-body,.break-info{
             i{
-                @include middle-position(relative)
-                @include custom-font($background-color,136px)
+                @include middle-position(relative);
+                @include custom-font($background-color,136px);
+                background: linear-gradient(to bottom right, $first-color, lighten($first-color,5));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
             width:50%;
             ul{
@@ -43,11 +46,5 @@
                 }
             }
         }   
-        .break-info{
-            background: linear-gradient(to top left, $first-color, lighten($first-color,5));
-            &:first-child{
-                background: linear-gradient(to bottom right, $first-color, lighten($first-color,5));
-            }
-        }
     }
 }

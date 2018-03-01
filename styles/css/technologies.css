@@ -1,3 +1,17 @@
 #technologies {
-  background-color: #212121;
+  background: linear-gradient(rgba(228, 23, 62, 0.4), rgba(228, 23, 62, 0.4)), url("../../images/tech-bcg.png") no-repeat;
+  background-size: cover;
   height: auto; }
+  #technologies .technologies-wrapper {
+    margin: 50px 200px; }
+    #technologies .technologies-wrapper .row {
+      justify-content: center;
+      display: flex;
+      width: 100%; }
+      #technologies .technologies-wrapper .row .tech {
+        flex-wrap: row wrap;
+        margin: 0px 50px;
+        width: 100px;
+        height: 100px;
+        transform: rotate(45deg);
+        background-color: rgba(228, 23, 62, 0.7); }

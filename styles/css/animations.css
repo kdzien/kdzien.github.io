@@ -3,3 +3,9 @@
     width: 0; }
   to {
     width: 100%; } }
+
+@keyframes hideoutline {
+  from {
+    width: 100%; }
+  to {
+    width: 0; } }
