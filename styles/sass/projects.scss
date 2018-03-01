@@ -3,5 +3,30 @@
 
 #projects{
     background-color:$background-color;
-    height:auto;
+    #projects-wrapper{
+        width:100%;
+        height:auto;
+        display:flex;
+        flex-wrap:wrap;
+        .project-small{
+            flex: 0 0 33.333%;
+            height:350px;
+            &.red{
+                background-color:red;
+            }
+            &.green{
+                background-color:green;
+            }
+            &.yellow{
+                background-color:yellow;
+            }
+            &.pink{
+                background-color:pink;
+            }
+            &.black{
+                background-color:black;
+            }
+
+        }
+    }
 }

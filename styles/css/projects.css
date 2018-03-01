@@ -1,3 +1,20 @@
 #projects {
-  background-color: #212121;
-  height: auto; }
+  background-color: #212121; }
+  #projects #projects-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; }
+    #projects #projects-wrapper .project-small {
+      flex: 0 0 33.333%;
+      height: 350px; }
+      #projects #projects-wrapper .project-small.red {
+        background-color: red; }
+      #projects #projects-wrapper .project-small.green {
+        background-color: green; }
+      #projects #projects-wrapper .project-small.yellow {
+        background-color: yellow; }
+      #projects #projects-wrapper .project-small.pink {
+        background-color: pink; }
+      #projects #projects-wrapper .project-small.black {
+        background-color: black; }
