@@ -2,7 +2,7 @@
 @import 'mixins.scss';
 
 #projects{
-    background-color:$background-color;
+    background-color:$first-color;
     #projects-wrapper{
         width:100%;
         height:auto;
@@ -11,20 +11,24 @@
         .project-small{
             flex: 0 0 33.333%;
             height:350px;
-            &.red{
-                background-color:red;
+            background-size:100%;
+            background-color:white;
+            background-repeat:no-repeat;
+            background-position: center;
+            &.first{
+                background-image: url("../../images/easyshopping.png")
             }
-            &.green{
-                background-color:green;
+            &.second{
+                background-image: url("../../images/onlywins.png")
             }
-            &.yellow{
-                background-color:yellow;
+            &.third{
+                background-image: url("../../images/eat24.png")
             }
-            &.pink{
-                background-color:pink;
+            &.fourth{
+                background-image: url("../../images/mwatr.png")
             }
-            &.black{
-                background-color:black;
+            &.fifth{
+                background-image: url("../../images/portfolio.png")
             }
 
         }

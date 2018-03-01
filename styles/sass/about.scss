@@ -3,15 +3,20 @@
 
 #about{
     height:auto;
-    margin-bottom:40px;
     #about-wrapper{
         display:flex;
-        #experience-body,#learn-body{
+        flex-wrap:wrap;
+        #experience-body,#learn-body,.break-info{
+            i{
+                @include middle-position(relative)
+                @include custom-font($background-color,136px)
+            }
             width:50%;
             ul{
-                @include clear-padding();
+                @include clear-padding("all");
                 list-style:none;
                 width:400px;
+                padding-bottom:40px;
                 @include clear-margin();
                 li{
                     position:relative;
@@ -30,8 +35,19 @@
                         @include clear-margin();
                         padding-bottom:10px;
                     }
+                    &:last-child{
+                        p:last-child{
+                            @include clear-padding("bottom")
+                        }
+                    }
                 }
             }
         }   
+        .break-info{
+            background: linear-gradient(to top left, $first-color, lighten($first-color,5));
+            &:first-child{
+                background: linear-gradient(to bottom right, $first-color, lighten($first-color,5));
+            }
+        }
     }
 }

@@ -1,0 +1,10 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+#footer{
+    background-color:$background-color;
+    #footer-credits{
+        @include custom-font(white,12px,300,$head-font);
+        @include title-position(20px);
+    }
+}

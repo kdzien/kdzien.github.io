@@ -9,8 +9,12 @@ body{
     @include title-font();
 }
 .section-header{
-    @include title-font($background-color,30px)
+    @include title-font($background-color,30px);
+    @include title-position(20px);
 }
 .white{
     color:white;
+}
+.bold{
+    font-weight:600;
 }

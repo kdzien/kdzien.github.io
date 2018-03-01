@@ -1,0 +1,59 @@
+#contact {
+  margin-bottom: 40px;
+  background-color: white; }
+  #contact #contact-wrapper {
+    display: flex; }
+    #contact #contact-wrapper .contact-form {
+      width: 50%;
+      margin: 0 40px; }
+      #contact #contact-wrapper .contact-form .form-wrapper {
+        width: 60%;
+        margin: 0 auto; }
+        #contact #contact-wrapper .contact-form .form-wrapper form {
+          margin: 0 auto; }
+          #contact #contact-wrapper .contact-form .form-wrapper form .form-element {
+            position: relative; }
+            #contact #contact-wrapper .contact-form .form-wrapper form .form-element .label {
+              color: black;
+              font-size: 15px;
+              position: relative;
+              top: 7px;
+              bottom: initial;
+              left: 10;
+              right: initial;
+              padding: 0;
+              background-color: white; }
+            #contact #contact-wrapper .contact-form .form-wrapper form .form-element input, #contact #contact-wrapper .contact-form .form-wrapper form .form-element textarea, #contact #contact-wrapper .contact-form .form-wrapper form .form-element button {
+              margin: 0 auto;
+              width: 100%;
+              margin-bottom: 20px;
+              padding: 10px 10px;
+              border: none;
+              border: solid;
+              border-radius: 0;
+              border-color: #e4173e;
+              border-width: 1px; }
+              #contact #contact-wrapper .contact-form .form-wrapper form .form-element input:focus, #contact #contact-wrapper .contact-form .form-wrapper form .form-element textarea:focus, #contact #contact-wrapper .contact-form .form-wrapper form .form-element button:focus {
+                outline: none; }
+            #contact #contact-wrapper .contact-form .form-wrapper form .form-element:focus-within:after {
+              content: '';
+              width: 99.9%;
+              border: solid;
+              border-radius: 0;
+              border-color: #e4173e;
+              border-width: 1px;
+              position: absolute;
+              bottom: 20;
+              left: 50%;
+              transform: translateX(-50%);
+              animation-name: "showoutline";
+              animation-duration: 0.4s; }
+          #contact #contact-wrapper .contact-form .form-wrapper form button {
+            width: 100%;
+            border: none;
+            padding: 10px 20px;
+            background-color: white;
+            color: #e4173e;
+            font-size: 24px;
+            font-weight: 700;
+            font-family: "Muli", sans-serif; }

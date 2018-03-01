@@ -18,7 +18,13 @@ body {
   font-weight: 300;
   text-align: center;
   padding: 40px 40px;
+  width: 100%;
+  text-align: center;
+  padding: 20px 20px;
   width: 100%; }
 
 .white {
   color: white; }
+
+.bold {
+  font-weight: 600; }

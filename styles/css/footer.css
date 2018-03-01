@@ -1,0 +1,10 @@
+#footer {
+  background-color: #212121; }
+  #footer #footer-credits {
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: "Muli", sans-serif;
+    text-align: center;
+    padding: 20px 20px;
+    width: 100%; }

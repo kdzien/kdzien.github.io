@@ -1,20 +1,28 @@
 #about {
-  height: auto;
-  margin-bottom: 40px; }
+  height: auto; }
   #about #about-wrapper {
-    display: flex; }
-    #about #about-wrapper #experience-body, #about #about-wrapper #learn-body {
+    display: flex;
+    flex-wrap: wrap; }
+    #about #about-wrapper #experience-body, #about #about-wrapper #learn-body, #about #about-wrapper .break-info {
       width: 50%; }
-      #about #about-wrapper #experience-body ul, #about #about-wrapper #learn-body ul {
+      #about #about-wrapper #experience-body i, #about #about-wrapper #learn-body i, #about #about-wrapper .break-info i {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #212121;
+        font-size: 136px; }
+      #about #about-wrapper #experience-body ul, #about #about-wrapper #learn-body ul, #about #about-wrapper .break-info ul {
         padding: 0;
         list-style: none;
         width: 400px;
+        padding-bottom: 40px;
         margin: 0 auto; }
-        #about #about-wrapper #experience-body ul li, #about #about-wrapper #learn-body ul li {
+        #about #about-wrapper #experience-body ul li, #about #about-wrapper #learn-body ul li, #about #about-wrapper .break-info ul li {
           position: relative;
           border-left: solid #e4173e;
           padding-left: 20px; }
-          #about #about-wrapper #experience-body ul li:before, #about #about-wrapper #learn-body ul li:before {
+          #about #about-wrapper #experience-body ul li:before, #about #about-wrapper #learn-body ul li:before, #about #about-wrapper .break-info ul li:before {
             content: '';
             border: solid 2px #e4173e;
             border-radius: 50%;
@@ -23,6 +31,12 @@
             position: absolute;
             left: -8.5;
             background-color: white; }
-          #about #about-wrapper #experience-body ul li p, #about #about-wrapper #learn-body ul li p {
+          #about #about-wrapper #experience-body ul li p, #about #about-wrapper #learn-body ul li p, #about #about-wrapper .break-info ul li p {
             margin: 0 auto;
             padding-bottom: 10px; }
+          #about #about-wrapper #experience-body ul li:last-child p:last-child, #about #about-wrapper #learn-body ul li:last-child p:last-child, #about #about-wrapper .break-info ul li:last-child p:last-child {
+            padding-bottom: 0; }
+    #about #about-wrapper .break-info {
+      background: linear-gradient(to top left, #e4173e, #ea2b4f); }
+      #about #about-wrapper .break-info:first-child {
+        background: linear-gradient(to bottom right, #e4173e, #ea2b4f); }

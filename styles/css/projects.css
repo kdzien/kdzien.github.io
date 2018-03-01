@@ -1,5 +1,5 @@
 #projects {
-  background-color: #212121; }
+  background-color: #e4173e; }
   #projects #projects-wrapper {
     width: 100%;
     height: auto;
@@ -7,14 +7,18 @@
     flex-wrap: wrap; }
     #projects #projects-wrapper .project-small {
       flex: 0 0 33.333%;
-      height: 350px; }
-      #projects #projects-wrapper .project-small.red {
-        background-color: red; }
-      #projects #projects-wrapper .project-small.green {
-        background-color: green; }
-      #projects #projects-wrapper .project-small.yellow {
-        background-color: yellow; }
-      #projects #projects-wrapper .project-small.pink {
-        background-color: pink; }
-      #projects #projects-wrapper .project-small.black {
-        background-color: black; }
+      height: 350px;
+      background-size: 100%;
+      background-color: white;
+      background-repeat: no-repeat;
+      background-position: center; }
+      #projects #projects-wrapper .project-small.first {
+        background-image: url("../../images/easyshopping.png"); }
+      #projects #projects-wrapper .project-small.second {
+        background-image: url("../../images/onlywins.png"); }
+      #projects #projects-wrapper .project-small.third {
+        background-image: url("../../images/eat24.png"); }
+      #projects #projects-wrapper .project-small.fourth {
+        background-image: url("../../images/mwatr.png"); }
+      #projects #projects-wrapper .project-small.fifth {
+        background-image: url("../../images/portfolio.png"); }

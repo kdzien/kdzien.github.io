@@ -5,8 +5,24 @@
 @mixin clear-margin{
     margin: 0 auto;
 }
-@mixin clear-padding{
-    padding:0;
+@mixin clear-padding($choice){
+
+    @if $choice == "top"{
+        padding-top:0;
+    }
+    @else if $choice == "bottom"{
+        padding-bottom:0;
+    }
+    @else if $choice == "left"{
+        padding-left:0;
+    }
+    @else if $choice == "right"{
+        padding-right:0;
+    }
+    @else if $choice == "all"{
+        padding:0;
+    }
+    
 }
 
 @mixin custom-font($color,$size,$weight:null,$font:null){
@@ -24,20 +40,40 @@
     @include title-position()
 }
 
-@mixin title-position(){
+@mixin title-position($padding:40px){
     text-align:center;
-    padding: 40px 40px;
+    padding: $padding $padding;
     width:100%;
 }
-@mixin middle-position(){
-    position:absolute;
+@mixin custom-position($position,$top,$bottom,$left,$right){
+    position:$position;
+    top:$top;
+    bottom:$bottom;
+    left:$left;
+    right:$right;
+}
+@mixin middle-position($position:absolute){
+    position:$position;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%)
 }
-@mixin middle-bottom-position($bottom:0){
-    position:absolute;
+@mixin middle-bottom-position($bottom:0,$position:absolute){
+    position:$position;
     bottom:$bottom;
     left:50%;
     transform:translateX(-50%)
+}
+@mixin reset-border{
+    border:none;
+}
+@mixin default-border($color,$size,$weight,$round:0){
+    border:$weight;
+    border-radius:$round;
+    border-color:$color;
+    border-width: $size;
+}
+@mixin animation($name,$duration){
+    animation-name: $name;
+    animation-duration: $duration;
 }

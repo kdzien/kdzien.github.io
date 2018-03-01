@@ -1,0 +1,61 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+#contact{
+    margin-bottom:40px;
+    background-color:white;
+    #contact-wrapper{
+        display:flex;
+        .contact-form{
+            width:50%;
+            margin:0 40px;
+            .form-wrapper{
+                width:60%;
+                margin:0 auto;
+                form{
+                    margin:0 auto;
+                    .form-element{
+                        position:relative;
+                        .label{
+                            @include custom-font(black,15px);
+                            @include custom-position(relative,7px,initial,10,initial);
+                            @include clear-padding("all");
+                            background-color:white;
+                        }
+                        input,textarea,button{
+                            margin:0 auto;
+                            width:100%;
+                            margin-bottom:20px;
+                            padding:10px 10px;
+                            @include reset-border();
+                            @include default-border($first-color,1px,solid);
+                            &:focus{
+                                outline:none;
+                            }
+                        }
+                        &:focus-within:after{
+                            content:'';
+                            width:99.9%;
+                            @include default-border($first-color,1px,solid);
+                            @include middle-bottom-position(20);
+                            @include animation('showoutline',0.4s);
+                            
+                        }
+                    }
+                    
+                    
+                    button{
+                        width:100%;
+                        @include reset-border();
+                        padding:10px 20px;
+                        background-color:white;
+                        @include custom-font($first-color,24px,700,$head-font);
+                    }
+                }
+            }
+        }
+        .additional-info{
+
+        }
+    }
+}
