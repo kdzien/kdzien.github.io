@@ -2,17 +2,33 @@
   background-color: white; }
   #contact #contact-wrapper {
     display: flex; }
-    #contact #contact-wrapper .contact-form {
+    #contact #contact-wrapper .contact-form, #contact #contact-wrapper .contact-information {
       width: 50%;
       margin: 0 40px; }
-      #contact #contact-wrapper .contact-form .form-wrapper {
+      #contact #contact-wrapper .contact-form .form-wrapper, #contact #contact-wrapper .contact-information .form-wrapper {
         width: 60%;
         margin: 0 auto; }
-        #contact #contact-wrapper .contact-form .form-wrapper form {
+        #contact #contact-wrapper .contact-form .form-wrapper .info, #contact #contact-wrapper .contact-information .form-wrapper .info {
+          width: 50px;
+          height: 50px;
+          background-color: #e4173e;
+          border-radius: 50%;
+          margin-bottom: 10px; }
+          #contact #contact-wrapper .contact-form .form-wrapper .info i, #contact #contact-wrapper .contact-information .form-wrapper .info i {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white; }
+          #contact #contact-wrapper .contact-form .form-wrapper .info.phone:after, #contact #contact-wrapper .contact-information .form-wrapper .info.phone:after {
+            content: "533 830 555"; }
+          #contact #contact-wrapper .contact-form .form-wrapper .info.mail:after, #contact #contact-wrapper .contact-information .form-wrapper .info.mail:after {
+            content: "dzien.konrad@gmail.com"; }
+        #contact #contact-wrapper .contact-form .form-wrapper form, #contact #contact-wrapper .contact-information .form-wrapper form {
           margin: 0 auto; }
-          #contact #contact-wrapper .contact-form .form-wrapper form .form-element {
+          #contact #contact-wrapper .contact-form .form-wrapper form .form-element, #contact #contact-wrapper .contact-information .form-wrapper form .form-element {
             position: relative; }
-            #contact #contact-wrapper .contact-form .form-wrapper form .form-element .label {
+            #contact #contact-wrapper .contact-form .form-wrapper form .form-element .label, #contact #contact-wrapper .contact-information .form-wrapper form .form-element .label {
               color: black;
               font-size: 15px;
               position: relative;
@@ -22,7 +38,7 @@
               right: initial;
               padding: 0;
               background-color: white; }
-            #contact #contact-wrapper .contact-form .form-wrapper form .form-element input, #contact #contact-wrapper .contact-form .form-wrapper form .form-element textarea, #contact #contact-wrapper .contact-form .form-wrapper form .form-element button {
+            #contact #contact-wrapper .contact-form .form-wrapper form .form-element input, #contact #contact-wrapper .contact-form .form-wrapper form .form-element textarea, #contact #contact-wrapper .contact-form .form-wrapper form .form-element button, #contact #contact-wrapper .contact-information .form-wrapper form .form-element input, #contact #contact-wrapper .contact-information .form-wrapper form .form-element textarea, #contact #contact-wrapper .contact-information .form-wrapper form .form-element button {
               margin: 0 auto;
               width: 100%;
               margin-bottom: 20px;
@@ -32,9 +48,9 @@
               border-radius: 0;
               border-color: #e4173e;
               border-width: 1px; }
-              #contact #contact-wrapper .contact-form .form-wrapper form .form-element input:focus, #contact #contact-wrapper .contact-form .form-wrapper form .form-element textarea:focus, #contact #contact-wrapper .contact-form .form-wrapper form .form-element button:focus {
+              #contact #contact-wrapper .contact-form .form-wrapper form .form-element input:focus, #contact #contact-wrapper .contact-form .form-wrapper form .form-element textarea:focus, #contact #contact-wrapper .contact-form .form-wrapper form .form-element button:focus, #contact #contact-wrapper .contact-information .form-wrapper form .form-element input:focus, #contact #contact-wrapper .contact-information .form-wrapper form .form-element textarea:focus, #contact #contact-wrapper .contact-information .form-wrapper form .form-element button:focus {
                 outline: none; }
-            #contact #contact-wrapper .contact-form .form-wrapper form .form-element:focus-within:after {
+            #contact #contact-wrapper .contact-form .form-wrapper form .form-element:focus-within:after, #contact #contact-wrapper .contact-information .form-wrapper form .form-element:focus-within:after {
               content: '';
               width: 99.9%;
               border: solid;
@@ -47,7 +63,7 @@
               transform: translateX(-50%);
               animation-name: "showoutline";
               animation-duration: 0.4s; }
-          #contact #contact-wrapper .contact-form .form-wrapper form button {
+          #contact #contact-wrapper .contact-form .form-wrapper form button, #contact #contact-wrapper .contact-information .form-wrapper form button {
             width: 100%;
             border: none;
             padding: 10px 20px;

@@ -2,7 +2,8 @@
   height: auto; }
   #about #about-wrapper {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-bottom: 40px; }
     #about #about-wrapper #experience-body, #about #about-wrapper #learn-body, #about #about-wrapper .break-info {
       width: 50%; }
       #about #about-wrapper #experience-body i, #about #about-wrapper #learn-body i, #about #about-wrapper .break-info i {

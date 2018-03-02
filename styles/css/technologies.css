@@ -1,17 +1,32 @@
 #technologies {
   background: linear-gradient(rgba(228, 23, 62, 0.4), rgba(228, 23, 62, 0.4)), url("../../images/tech-bcg.png") no-repeat;
   background-size: cover;
-  height: auto; }
+  height: max-content; }
   #technologies .technologies-wrapper {
-    margin: 50px 200px; }
+    margin: 60px 200px; }
     #technologies .technologies-wrapper .row {
       justify-content: center;
       display: flex;
+      flex-wrap: row wrap;
       width: 100%; }
       #technologies .technologies-wrapper .row .tech {
-        flex-wrap: row wrap;
+        overflow: hidden;
         margin: 0px 50px;
         width: 100px;
         height: 100px;
         transform: rotate(45deg);
-        background-color: rgba(228, 23, 62, 0.7); }
+        border: solid;
+        border-radius: 0;
+        border-color: rgba(33, 33, 33, 0.7);
+        border-width: 3px; }
+        #technologies .technologies-wrapper .row .tech img {
+          filter: grayscale(100%);
+          width: 150px;
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%) rotate(-45deg); }
+        #technologies .technologies-wrapper .row .tech:hover img {
+          transition: 0.2s;
+          filter: grayscale(0%); }

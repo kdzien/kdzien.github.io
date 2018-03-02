@@ -5,10 +5,27 @@
     background-color:white;
     #contact-wrapper{
         display:flex;
-        .contact-form{
+        .contact-form,.contact-information{
             width:50%;
             margin:0 40px;
             .form-wrapper{
+                .info{
+                    width:50px;
+                    height:50px;
+                    background-color:$first-color;
+                    border-radius:50%;
+                    margin-bottom:10px;
+                    i{
+                        @include middle-position(relative)
+                        color:white;
+                    }
+                    &.phone:after{
+                        content:"533 830 555"
+                    }
+                    &.mail:after{
+                        content:"dzien.konrad@gmail.com"
+                    }
+                }
                 width:60%;
                 margin:0 auto;
                 form{
@@ -52,9 +69,6 @@
                     }
                 }
             }
-        }
-        .additional-info{
-
         }
     }
 }

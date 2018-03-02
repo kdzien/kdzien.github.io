@@ -6,6 +6,7 @@
     #about-wrapper{
         display:flex;
         flex-wrap:wrap;
+        margin-bottom:40px;
         #experience-body,#learn-body,.break-info{
             i{
                 @include middle-position(relative);
