@@ -2,6 +2,7 @@
 @import 'mixins.scss';
 
 #contact{
+    background-image:url("../../images/about-bcg.png");
     background-color:white;
     padding-bottom:40px;
     #contact-wrapper{
@@ -17,26 +18,34 @@
                     @include custom-font($background-color,28px,600,$head-font);
                     @include clear-margin();
                     width:max-content;
-                    padding-bottom:20px;
+                    padding-bottom:10px;
                 }
                 .info{
                     display:flex;
-                    .text{
-                        height:max-content;
-                        position:relative;
-                        left:10px;
-                        top:12px;
-                        font-size:17px
+                    flex-flow:row wrap;
+                    .phone,.mail{
+                        @include custom-font($background-color,17px,600);
+                        flex:0 0 100%;
+                        &:nth-child(2){
+                            padding-top:10px;
+                        }
                     }
-                    .icon{
-                        width:50px;
-                        height:50px;
-                        background-color:$first-color;
-                        border-radius:50%;
-                        margin-bottom:10px;
+                    .mediax{
+                        position:relative;
+                        margin-bottom:15px;
+                        flex: 0 0 33.33%;
+                        height:80px;
+                        transition:0.2s;
                         i{
                             @include middle-position(relative);
-                            color:white;
+                            font-size:40px;
+                            z-index:999;
+                        }
+                        &:hover{
+                            color:white !important;
+                        }
+                        &:not(:hover){
+                            color:inherit;
                         }
                     }
                 }

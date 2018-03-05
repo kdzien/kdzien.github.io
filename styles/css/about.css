@@ -1,5 +1,6 @@
 #about {
-  height: auto; }
+  height: auto;
+  background-image: url("../../images/about-bcg.png"); }
   #about #about-wrapper {
     display: flex;
     flex-wrap: wrap; }

@@ -3,7 +3,9 @@
 
 #about{
     height:auto;
+    background-image:url("../../images/about-bcg.png");
     #about-wrapper{
+        
         @include respond-to(phones){
             justify-content: center;
         }
