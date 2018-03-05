@@ -69,19 +69,6 @@
               border-width: 1px; }
               #contact #contact-wrapper .contact-form .form-wrapper form .form-element input:focus, #contact #contact-wrapper .contact-form .form-wrapper form .form-element textarea:focus, #contact #contact-wrapper .contact-form .form-wrapper form .form-element button:focus, #contact #contact-wrapper .contact-information .form-wrapper form .form-element input:focus, #contact #contact-wrapper .contact-information .form-wrapper form .form-element textarea:focus, #contact #contact-wrapper .contact-information .form-wrapper form .form-element button:focus {
                 outline: none; }
-            #contact #contact-wrapper .contact-form .form-wrapper form .form-element:focus-within:after, #contact #contact-wrapper .contact-information .form-wrapper form .form-element:focus-within:after {
-              content: '';
-              width: 99.9%;
-              border: solid;
-              border-radius: 0;
-              border-color: #e4173e;
-              border-width: 1px;
-              position: absolute;
-              bottom: 20;
-              left: 50%;
-              transform: translateX(-50%);
-              animation-name: "showoutline";
-              animation-duration: 0.4s; }
           #contact #contact-wrapper .contact-form .form-wrapper form button, #contact #contact-wrapper .contact-information .form-wrapper form button {
             width: 100%;
             border: none;

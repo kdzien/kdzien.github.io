@@ -68,6 +68,16 @@
                 width:80px;height:80px;
                 transform:rotate(45deg);
             }   
+            .tech-name{
+                width:100%;
+                @include custom-position(absolute,null,0,null,0);
+                @include custom-font(white,inherit);
+                height:max-content;
+                text-align:center;
+                background-color:transparentize($first-color,0.2);
+                cursor: context-menu;
+                display:none;
+            }
        
        }
     }

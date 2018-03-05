@@ -66,17 +66,7 @@
                                 outline:none;
                             }
                         }
-                        &:focus-within:after{
-                            content:'';
-                            width:99.9%;
-                            @include default-border($first-color,1px,solid);
-                            @include middle-bottom-position(20);
-                            @include animation('showoutline',0.4s);
-                            
-                        }
                     }
-                    
-                    
                     button{
                         width:100%;
                         @include reset-border();

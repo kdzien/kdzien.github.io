@@ -11,7 +11,7 @@ gulp.task('sass', function () {
       .pipe(gulp.dest('./styles/css'))
   });
 gulp.task('scripts', ()=> {  
-    return gulp.src('scripts/*.js')
+    return gulp.src('./scripts/*.js')
     .pipe(browserSync.stream());
   });
 gulp.task('html',()=>{  
