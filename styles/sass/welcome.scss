@@ -10,14 +10,17 @@
         span{color:#cccccc}
         h1{
             @include clear-margin();
-            @include custom-font($first-color,78px,300,$head-font)
+            @include custom-font($first-color,78px,300,$head-font);
+            @include respond-to(phones){
+                font-size:58px;
+            }
         }
         h3{
             @include custom-font(white,24px,300,$head-font)
         }
     }
     #in-icon{
-        @include middle-bottom-position(20);
+        @include middle-bottom-position(0);
         i{
             @include custom-font($first-color,80px);
             &:first-child{

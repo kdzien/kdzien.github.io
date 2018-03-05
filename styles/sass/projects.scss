@@ -3,6 +3,11 @@
 
 #projects{
     background-color:$background-color;
+    .title {
+        @include respond-to(phones){
+            font-size:xx-large;
+        }
+    }
     #projects-wrapper{
         width:100%;
         height:auto;
@@ -12,9 +17,34 @@
             flex: 0 0 33.333%;
             height:23vw;
             background-size:cover;
-            background-color:white;
             background-repeat:no-repeat;
             background-position: center;
+            @include respond-to(phones){
+                flex: 0 0 100% !important;
+                height:50vw
+            }
+            .info-overlay{
+                position:relative;
+                width:100%;
+                height:100%;
+                background-color:transparentize($color: $background-color, $amount: 0.2);
+                div{
+                    @include middle-position(relative);
+                    text-align:center;
+                    @include custom-font(white,22px);
+                    @include respond-to(phones){
+                        font-size:16px;
+                    }
+                }
+                i{
+                    color:white;
+                    @include custom-position(absolute,null,5,null,5);
+                    font-size:36px;
+                    @include respond-to(phones){
+                        font-size:28px;
+                    }
+                }
+            }
             &.first{
                 background-image: url("../../images/easyshopping.png");
                 flex: 0 0 66.666%;

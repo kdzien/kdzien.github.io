@@ -7,6 +7,10 @@ body{
 }
 .title{
     @include title-font();
+    @include respond-to(phones){
+        font-size:xx-large;
+    }
+
 }
 .section-header{
     @include title-font($background-color,30px);
@@ -17,4 +21,12 @@ body{
 }
 .bold{
     font-weight:600;
+}
+.separator{
+    border: solid red 1px;
+    transform: rotate(15deg);
+    margin-left: 20px;
+    @include respond-to(phones){
+       display:none; 
+    }
 }

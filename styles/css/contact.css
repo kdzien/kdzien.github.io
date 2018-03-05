@@ -1,29 +1,48 @@
 #contact {
-  background-color: white; }
+  background-color: white;
+  padding-bottom: 40px; }
   #contact #contact-wrapper {
-    display: flex; }
+    display: flex;
+    flex-flow: row wrap; }
     #contact #contact-wrapper .contact-form, #contact #contact-wrapper .contact-information {
-      width: 50%;
-      margin: 0 40px; }
+      flex: 0 0 50% !important; }
+      @media only screen and (max-width: 768px) {
+        #contact #contact-wrapper .contact-form, #contact #contact-wrapper .contact-information {
+          flex: 0 0 100% !important; } }
       #contact #contact-wrapper .contact-form .form-wrapper, #contact #contact-wrapper .contact-information .form-wrapper {
         width: 60%;
         margin: 0 auto; }
+        #contact #contact-wrapper .contact-form .form-wrapper .name, #contact #contact-wrapper .contact-information .form-wrapper .name {
+          color: #212121;
+          font-size: 28px;
+          font-weight: 600;
+          font-family: "Muli", sans-serif;
+          margin: 0 auto;
+          width: max-content;
+          padding-bottom: 20px; }
         #contact #contact-wrapper .contact-form .form-wrapper .info, #contact #contact-wrapper .contact-information .form-wrapper .info {
-          width: 50px;
-          height: 50px;
-          background-color: #e4173e;
-          border-radius: 50%;
-          margin-bottom: 10px; }
-          #contact #contact-wrapper .contact-form .form-wrapper .info i, #contact #contact-wrapper .contact-information .form-wrapper .info i {
+          display: flex; }
+          #contact #contact-wrapper .contact-form .form-wrapper .info .text, #contact #contact-wrapper .contact-information .form-wrapper .info .text {
+            height: max-content;
             position: relative;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white; }
-          #contact #contact-wrapper .contact-form .form-wrapper .info.phone:after, #contact #contact-wrapper .contact-information .form-wrapper .info.phone:after {
-            content: "533 830 555"; }
-          #contact #contact-wrapper .contact-form .form-wrapper .info.mail:after, #contact #contact-wrapper .contact-information .form-wrapper .info.mail:after {
-            content: "dzien.konrad@gmail.com"; }
+            left: 10px;
+            top: 12px;
+            font-size: 17px; }
+          #contact #contact-wrapper .contact-form .form-wrapper .info .icon, #contact #contact-wrapper .contact-information .form-wrapper .info .icon {
+            width: 50px;
+            height: 50px;
+            background-color: #e4173e;
+            border-radius: 50%;
+            margin-bottom: 10px; }
+            #contact #contact-wrapper .contact-form .form-wrapper .info .icon i, #contact #contact-wrapper .contact-information .form-wrapper .info .icon i {
+              position: relative;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: white; }
+        @media only screen and (max-width: 768px) {
+          #contact #contact-wrapper .contact-form .form-wrapper, #contact #contact-wrapper .contact-information .form-wrapper {
+            width: 70%; } }
         #contact #contact-wrapper .contact-form .form-wrapper form, #contact #contact-wrapper .contact-information .form-wrapper form {
           margin: 0 auto; }
           #contact #contact-wrapper .contact-form .form-wrapper form .form-element, #contact #contact-wrapper .contact-information .form-wrapper form .form-element {
@@ -66,9 +85,12 @@
           #contact #contact-wrapper .contact-form .form-wrapper form button, #contact #contact-wrapper .contact-information .form-wrapper form button {
             width: 100%;
             border: none;
-            padding: 10px 20px;
+            padding: 20px;
             background-color: white;
             color: #e4173e;
             font-size: 24px;
             font-weight: 700;
             font-family: "Muli", sans-serif; }
+    @media only screen and (max-width: 768px) {
+      #contact #contact-wrapper .contact-information {
+        border-top: 1px solid #e4173e; } }

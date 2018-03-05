@@ -10,6 +10,9 @@ body {
   text-align: center;
   padding: 40px 40px;
   width: 100%; }
+  @media only screen and (max-width: 768px) {
+    .title {
+      font-size: xx-large; } }
 
 .section-header {
   color: #212121;
@@ -28,3 +31,11 @@ body {
 
 .bold {
   font-weight: 600; }
+
+.separator {
+  border: solid red 1px;
+  transform: rotate(15deg);
+  margin-left: 20px; }
+  @media only screen and (max-width: 768px) {
+    .separator {
+      display: none; } }

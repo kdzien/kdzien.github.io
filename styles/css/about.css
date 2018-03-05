@@ -2,10 +2,55 @@
   height: auto; }
   #about #about-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 40px; }
+    flex-wrap: wrap; }
+    @media only screen and (max-width: 768px) {
+      #about #about-wrapper {
+        justify-content: center; } }
+    #about #about-wrapper #about-info {
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 20px;
+      padding-bottom: 50px;
+      text-align: center; }
+      #about #about-wrapper #about-info img {
+        border-radius: 50%;
+        width: 220px;
+        height: 220px;
+        margin-bottom: 40px; }
+      #about #about-wrapper #about-info #about-info-wrapper {
+        display: flex;
+        width: 55%;
+        margin: 0 auto; }
+        @media only screen and (max-width: 768px) {
+          #about #about-wrapper #about-info #about-info-wrapper {
+            width: 100%; } }
+        #about #about-wrapper #about-info #about-info-wrapper p {
+          margin-top: auto;
+          margin-bottom: auto;
+          line-height: 25px;
+          text-align: center;
+          padding-left: 40px;
+          padding-right: 20px;
+          color: black;
+          font-size: 18px; }
+          @media only screen and (max-width: 768px) {
+            #about #about-wrapper #about-info #about-info-wrapper p {
+              margin: 15px;
+              padding: 0; } }
+    @media only screen and (max-width: 768px) {
+      #about #about-wrapper #experience-body {
+        order: 2; }
+      #about #about-wrapper #learn-body {
+        order: 4; }
+      #about #about-wrapper .break-info.learn {
+        order: 3; }
+      #about #about-wrapper .break-info.work {
+        order: 1; } }
     #about #about-wrapper #experience-body, #about #about-wrapper #learn-body, #about #about-wrapper .break-info {
       width: 50%; }
+      @media only screen and (max-width: 768px) {
+        #about #about-wrapper #experience-body, #about #about-wrapper #learn-body, #about #about-wrapper .break-info {
+          width: auto; } }
       #about #about-wrapper #experience-body i, #about #about-wrapper #learn-body i, #about #about-wrapper .break-info i {
         position: relative;
         top: 50%;
@@ -22,6 +67,10 @@
         width: 400px;
         padding-bottom: 40px;
         margin: 0 auto; }
+        @media only screen and (max-width: 768px) {
+          #about #about-wrapper #experience-body ul, #about #about-wrapper #learn-body ul, #about #about-wrapper .break-info ul {
+            width: auto;
+            padding-left: 20px; } }
         #about #about-wrapper #experience-body ul li, #about #about-wrapper #learn-body ul li, #about #about-wrapper .break-info ul li {
           position: relative;
           border-left: solid #e4173e;

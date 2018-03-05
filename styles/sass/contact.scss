@@ -3,30 +3,47 @@
 
 #contact{
     background-color:white;
+    padding-bottom:40px;
     #contact-wrapper{
         display:flex;
+        flex-flow: row wrap;
         .contact-form,.contact-information{
-            width:50%;
-            margin:0 40px;
+            flex: 0 0 50% !important;
+            @include respond-to(phones){
+                flex: 0 0 100% !important;
+            }
             .form-wrapper{
+                .name{
+                    @include custom-font($background-color,28px,600,$head-font);
+                    @include clear-margin();
+                    width:max-content;
+                    padding-bottom:20px;
+                }
                 .info{
-                    width:50px;
-                    height:50px;
-                    background-color:$first-color;
-                    border-radius:50%;
-                    margin-bottom:10px;
-                    i{
-                        @include middle-position(relative)
-                        color:white;
+                    display:flex;
+                    .text{
+                        height:max-content;
+                        position:relative;
+                        left:10px;
+                        top:12px;
+                        font-size:17px
                     }
-                    &.phone:after{
-                        content:"533 830 555"
-                    }
-                    &.mail:after{
-                        content:"dzien.konrad@gmail.com"
+                    .icon{
+                        width:50px;
+                        height:50px;
+                        background-color:$first-color;
+                        border-radius:50%;
+                        margin-bottom:10px;
+                        i{
+                            @include middle-position(relative);
+                            color:white;
+                        }
                     }
                 }
                 width:60%;
+                @include respond-to(phones){
+                    width:70%
+                }
                 margin:0 auto;
                 form{
                     margin:0 auto;
@@ -63,11 +80,16 @@
                     button{
                         width:100%;
                         @include reset-border();
-                        padding:10px 20px;
+                        padding:20px;
                         background-color:white;
                         @include custom-font($first-color,24px,700,$head-font);
                     }
                 }
+            }
+        }
+        .contact-information{
+            @include respond-to(phones){
+                border-top:1px solid $first-color;
             }
         }
     }

@@ -4,10 +4,65 @@
 #about{
     height:auto;
     #about-wrapper{
+        @include respond-to(phones){
+            justify-content: center;
+        }
         display:flex;
         flex-wrap:wrap;
-        margin-bottom:40px;
+        #about-info{
+            width:100%;
+            @include clear-margin();
+            padding-top:20px;
+            padding-bottom:50px;    
+            text-align:center;        
+            img{
+                border-radius:50%;
+                width:220px;height:220px;
+                margin-bottom:40px;
+            }
+            #about-info-wrapper{
+                display:flex;
+                width:55%;
+                @include clear-margin();
+                @include respond-to(phones){
+                    width:100%;
+                }
+                p{
+                    @include respond-to(phones){
+                        margin:15px;
+                        @include clear-padding(all);
+                    }
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    line-height: 25px;
+                    text-align: center;
+                    padding-left:40px;
+                    padding-right:20px;
+                    @include custom-font(black,18px);
+                }
+            }
+        }
+        @include respond-to(phones){
+            #experience-body{
+                order:2;
+            }
+            #learn-body{
+                order:4
+            }
+            .break-info{
+                &.learn{
+                    order:3
+                }
+                &.work{
+                    order:1
+                }
+            }
+        }
         #experience-body,#learn-body,.break-info{
+            width:50%;
+            @include respond-to(phones){
+                width:auto;
+            }
             i{
                 @include middle-position(relative);
                 @include custom-font($background-color,136px);
@@ -15,8 +70,11 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
-            width:50%;
             ul{
+                @include respond-to(phones){
+                    width:auto;
+                    padding-left:20px;
+                }
                 @include clear-padding("all");
                 list-style:none;
                 width:400px;

@@ -16,6 +16,9 @@
       font-size: 78px;
       font-weight: 300;
       font-family: "Muli", sans-serif; }
+      @media only screen and (max-width: 768px) {
+        #welcome #head h1 {
+          font-size: 58px; } }
     #welcome #head h3 {
       color: white;
       font-size: 24px;
@@ -23,7 +26,7 @@
       font-family: "Muli", sans-serif; }
   #welcome #in-icon {
     position: absolute;
-    bottom: 20;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%); }
     #welcome #in-icon i {
