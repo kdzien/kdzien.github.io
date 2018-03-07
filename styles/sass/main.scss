@@ -32,14 +32,28 @@ body{
 }
 
 .input-outline{
-    position:relative;
-    top:-20.5px;
+    @include custom-position(absolute,null,20px,null,null);
     width:0%;
-    height:1.5px;
+    height:1px;
     background-color:$first-color;
+    z-index:999;
 }
 .background-oly{
     @include custom-position(absolute,null,0,null,null);
     width:100%;
     height:3%;
+}
+.warning-message{
+    text-align:center;
+    width:100%;
+    @include clear-margin();
+    @include custom-font(#da2000,15px,400);
+    @include  middle-bottom-position(0px);
+}
+.correct-label{
+    @include custom-position(absolute,10,null,null,-40);
+    i{
+        font-size:0px;
+        color:#2fd64d;
+    }
 }

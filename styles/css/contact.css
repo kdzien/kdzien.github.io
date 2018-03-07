@@ -31,23 +31,25 @@
             flex: 0 0 100%; }
             #contact #contact-wrapper .contact-form .form-wrapper .info .phone:nth-child(2), #contact #contact-wrapper .contact-form .form-wrapper .info .mail:nth-child(2), #contact #contact-wrapper .contact-information .form-wrapper .info .phone:nth-child(2), #contact #contact-wrapper .contact-information .form-wrapper .info .mail:nth-child(2) {
               padding-top: 10px; }
-          #contact #contact-wrapper .contact-form .form-wrapper .info .mediax, #contact #contact-wrapper .contact-information .form-wrapper .info .mediax {
+          #contact #contact-wrapper .contact-form .form-wrapper .info a, #contact #contact-wrapper .contact-information .form-wrapper .info a {
             position: relative;
             margin-bottom: 15px;
             flex: 0 0 33.33%;
             height: 80px;
             transition: 0.2s; }
-            #contact #contact-wrapper .contact-form .form-wrapper .info .mediax i, #contact #contact-wrapper .contact-information .form-wrapper .info .mediax i {
-              position: relative;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              font-size: 40px;
-              z-index: 999; }
-            #contact #contact-wrapper .contact-form .form-wrapper .info .mediax:hover, #contact #contact-wrapper .contact-information .form-wrapper .info .mediax:hover {
-              color: white !important; }
-            #contact #contact-wrapper .contact-form .form-wrapper .info .mediax:not(:hover), #contact #contact-wrapper .contact-information .form-wrapper .info .mediax:not(:hover) {
-              color: inherit; }
+            #contact #contact-wrapper .contact-form .form-wrapper .info a .mediax, #contact #contact-wrapper .contact-information .form-wrapper .info a .mediax {
+              height: 80px; }
+              #contact #contact-wrapper .contact-form .form-wrapper .info a .mediax i, #contact #contact-wrapper .contact-information .form-wrapper .info a .mediax i {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 40px;
+                z-index: 999; }
+              #contact #contact-wrapper .contact-form .form-wrapper .info a .mediax:hover, #contact #contact-wrapper .contact-information .form-wrapper .info a .mediax:hover {
+                color: white !important; }
+              #contact #contact-wrapper .contact-form .form-wrapper .info a .mediax:not(:hover), #contact #contact-wrapper .contact-information .form-wrapper .info a .mediax:not(:hover) {
+                color: inherit; }
         @media only screen and (max-width: 768px) {
           #contact #contact-wrapper .contact-form .form-wrapper, #contact #contact-wrapper .contact-information .form-wrapper {
             width: 70%; } }
@@ -56,7 +58,7 @@
           #contact #contact-wrapper .contact-form .form-wrapper form .form-element, #contact #contact-wrapper .contact-information .form-wrapper form .form-element {
             position: relative; }
             #contact #contact-wrapper .contact-form .form-wrapper form .form-element .label, #contact #contact-wrapper .contact-information .form-wrapper form .form-element .label {
-              color: black;
+              color: #e4173e;
               font-size: 15px;
               position: relative;
               top: 7px;
@@ -73,10 +75,12 @@
               border: none;
               border: solid;
               border-radius: 0;
-              border-color: #e4173e;
+              border-color: #212121;
               border-width: 1px; }
               #contact #contact-wrapper .contact-form .form-wrapper form .form-element input:focus, #contact #contact-wrapper .contact-form .form-wrapper form .form-element textarea:focus, #contact #contact-wrapper .contact-form .form-wrapper form .form-element button:focus, #contact #contact-wrapper .contact-information .form-wrapper form .form-element input:focus, #contact #contact-wrapper .contact-information .form-wrapper form .form-element textarea:focus, #contact #contact-wrapper .contact-information .form-wrapper form .form-element button:focus {
                 outline: none; }
+            #contact #contact-wrapper .contact-form .form-wrapper form .form-element textarea, #contact #contact-wrapper .contact-information .form-wrapper form .form-element textarea {
+              resize: none; }
           #contact #contact-wrapper .contact-form .form-wrapper form button, #contact #contact-wrapper .contact-information .form-wrapper form button {
             width: 100%;
             border: none;

@@ -30,22 +30,25 @@
                             padding-top:10px;
                         }
                     }
-                    .mediax{
+                    a{  
                         position:relative;
                         margin-bottom:15px;
                         flex: 0 0 33.33%;
                         height:80px;
                         transition:0.2s;
-                        i{
-                            @include middle-position(relative);
-                            font-size:40px;
-                            z-index:999;
-                        }
-                        &:hover{
-                            color:white !important;
-                        }
-                        &:not(:hover){
-                            color:inherit;
+                        .mediax{
+                            height:80px;
+                            i{
+                                @include middle-position(relative);
+                                font-size:40px;
+                                z-index:999;
+                            }
+                            &:hover{
+                                color:white !important;
+                            }
+                            &:not(:hover){
+                                color:inherit;
+                            }
                         }
                     }
                 }
@@ -59,7 +62,7 @@
                     .form-element{
                         position:relative;
                         .label{
-                            @include custom-font(black,15px);
+                            @include custom-font($first-color,15px);
                             @include custom-position(relative,7px,initial,10,initial);
                             @include clear-padding("all");
                             background-color:white;
@@ -70,10 +73,13 @@
                             margin-bottom:20px;
                             padding:10px 10px;
                             @include reset-border();
-                            @include default-border($first-color,1px,solid);
+                            @include default-border($background-color,1px,solid);
                             &:focus{
                                 outline:none;
                             }
+                        }
+                        textarea {
+                            resize: none;
                         }
                     }
                     button{

@@ -90,21 +90,21 @@
                         <form>  
                             <div class="form-element">
                                 <div class="label" id="name-label"></div>
-                                <input />
+                                <input id="name-input" requierd />
                             </div>
                             <div class="form-element">
                                 <div class="label">E-mail*</div>
-                                <input />
+                                <input id="email-input" required />
                             </div>
                             <div class="form-element">
                                 <div class="label" id="topic-label"></div>
-                                <input />
+                                <input id="topic-input" required />
                             </div>
                             <div class="form-element">
                                 <div class="label" id="message-label"></div>
-                                <textarea></textarea>
+                                <textarea id="message-input" rows="10" required></textarea>
                             </div>
-                            <button id="send-form-button"></button>
+                            <button id="send-form-button" disabled></button>
                         </form>
                     </div>
                 </div>
@@ -113,9 +113,9 @@
                     <div class="form-wrapper">
                         <div class="name">Konrad Dzień</div>
                         <div class="info">
-                            <div class="mediax facebook"><i class="fab fa-facebook-f"></i></div>
-                            <div class="mediax github"><i class="fab fa-github"></i></div>
-                            <div class="mediax linkedin"><i class="fab fa-linkedin-in"></i></div>
+                            <a href="https://facebook.com/dzieniu" target="_blank"><div class="mediax facebook"><i class="fab fa-facebook-f"></i></div></a>
+                            <a href="https://github.com/kdzien" target="_blank"><div class="mediax github"><i class="fab fa-github"></i></div></a>
+                            <a href="https://linkedin.com/profile/dzienkonrad" target="_blank"><div class="mediax linkedin"><i class="fab fa-linkedin-in"></i></div></a>
                         </div>
                         <div class="info">
                             <div class="mail">dzien.konrad@gmail.com</div>
@@ -135,6 +135,8 @@
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src='./scripts/readJSON.js' rel="text/javascript"></script>
+    
+    <script src='./scripts/validateform.js' rel="text/javascript"></script>
     <script src='./scripts/animation.js' rel="text/javascript"></script>
     
 </html>
