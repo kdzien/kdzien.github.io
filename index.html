@@ -12,7 +12,7 @@
         <div id="welcome">
             <div id="language"><span>| </span>EN</div>
             <div id="head">
-                <h1><span>HI! I'm</span> Konrad Dzień</h1>
+                <h1><span id="hi"></span> Konrad Dzień</h1>
                 <h3>Junior Front-end Developer</h3>
             </div>
             <div id="in-icon">
@@ -23,54 +23,33 @@
         </div>
 
         <div id="about">
-            <div class="title">ABOUT</div>
+            <div class="title" id="about-title"></div>
             <div id="about-wrapper">
                 <div id="about-info">
                     <img src="../../images/me.png" />
                     <div id="about-info-wrapper">
                         <div class="separator"></div>
-                        <p>Moja przygoda z tworzeniem stron zaczęła się rok temu przy okazji projektu zespołowego na uczelni. Przy tym projekcie zdecydowałem, że chcę się tym zajmować zawodowo. Cały czas się rozwijam, wykorzystując zdobytą wiedzę i ucząc się nowych technologii. Na koncie mam kilka własnych projektów przedstawionych poniżej.</p>
+                        <p id="about-me"></p>
                         <div class="separator">
                         </div>
                     </div>
                 </div>
                 <div id="experience-body">
-                    <div class="section-header">Commercial experience</div>
+                    <div class="section-header"></div>
                     <ul>
-                        <li>
-                            <span>07.2017 - Obecnie</span>
-                            <h4>Junior Front-end Developer, InntradeSC</h4>
-                            <p>Kodowanie szablonów na podstawie projektu graficznego, wprowadzenie i edycja treści na aukcjach internetowych, tworzenie rozwiązań do automatyzacji pracy </p>
-                        </li>
-                        <li>
-                            <span>11.2016 - 03.02.2017</span>
-                            <h4>Helpdesk, SI Consulting</h4>
-                            <p>HelpDesk</p>
-                        </li>
                     </ul>
                 </div>
                 <div class="break-info work"><i class="material-icons">work</i></div>
-                    <div class="break-info learn"><i class="material-icons">school</i></div>
-                    <div id="learn-body">
-                        <div class="section-header">Learning</div>
-                        <ul>
-                            <li>
-                                <span>09.2013 - 12.2017</span>
-                                <h4>Politechnika Wrocławska</h4>
-                                <p>Ukończone studia inżynierskie<br>Kierunek:Informatyka<br>Specjalność:Inżyniera Systemów Informatycznych </p>
-                            </li>
-                            <li>
-                                <span>07.2016 - Obecnie</span>
-                                <h4>Projekty w ramach nauki</h4>
-                                <p>Wykonane projekty w ramach nauki różnych technologii. Zachęcam do odwiedzenia mojego Githuba.<br><a>github.com/kdzien</a></p>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="break-info learn"><i class="material-icons">school</i></div>
+                <div id="learn-body">
+                    <div class="section-header"></div>
+                    <ul></ul>
+                </div>
             </div>
         </div>
 
         <div id="technologies">
-                <div class="title white">TECHNOLOGIES & TOOLS</div>
+                <div class="title white" id="tech-title"></div>
                 <div class="technologies-wrapper">
                     <div class="row-t row-3">
                         <div class="tech" data-tech="AngularJS"><img src="../../images/technologies/angular.png" /></div>
@@ -97,35 +76,20 @@
         </div>
 
         <div id="projects">
-                <div class="title white">PROJECTS</div>
+                <div class="title white" id="projects-title"></div>
                 <div id="projects-wrapper">
-                    <div class="project-small first">
-                        <div class="info-overlay"><div>Tworzenie listy zakupów na podstawie tygodniowego planu żywienia</div><i class="material-icons">&#xE89E;</i></div>
-                    </div>
-                    <div class="project-small second">
-                        <div class="info-overlay"><div>Aplikacja do wymiany typami bukmacherskimi</div><i class="material-icons">&#xE89E;</i></div>
-                    </div>  
-                    <div class="project-small third">
-                        <div class="info-overlay"><div>Aplikacja do wspólnego zamawiania posiłków</div><i class="material-icons">&#xE89E;</i></div>
-                    </div>
-                    <div class="project-small fourth">
-                        <div class="info-overlay"><div>Strona zespołu muzycznego</div><i class="material-icons">&#xE89E;</i></div>
-                    </div>
-                    <div class="project-small fifth">
-                        <div class="info-overlay"><div>Portfolio</div><i class="material-icons">&#xE89E;</i></div>
-                    </div>
                 </div>
         </div>
         
         <div id="contact">
-            <div class="title">CONTACT</div>
+            <div class="title" id="contact-title"></div>
             <div id="contact-wrapper">
                 <div class="contact-form">
-                    <div class="section-header ">Contact form</div>
+                    <div class="section-header " id="contact-form"></div>
                     <div class="form-wrapper">
                         <form>  
                             <div class="form-element">
-                                <div class="label">Name*</div>
+                                <div class="label" id="name-label"></div>
                                 <input />
                             </div>
                             <div class="form-element">
@@ -133,19 +97,19 @@
                                 <input />
                             </div>
                             <div class="form-element">
-                                    <div class="label">Topic*</div>
-                                    <input />
-                                </div>
+                                <div class="label" id="topic-label"></div>
+                                <input />
+                            </div>
                             <div class="form-element">
-                                <div class="label">Message*</div>
+                                <div class="label" id="message-label"></div>
                                 <textarea></textarea>
                             </div>
-                            <button>SEND</button>
+                            <button id="send-form-button"></button>
                         </form>
                     </div>
                 </div>
                 <div class="contact-information">
-                    <div class="section-header ">Contact information</div>
+                    <div class="section-header " id="contact-info"></div>
                     <div class="form-wrapper">
                         <div class="name">Konrad Dzień</div>
                         <div class="info">
@@ -165,11 +129,12 @@
             </div>
         </div>
         <div id="footer">
-            <div id="footer-credits">© 2018 Konrad Dzień - Wszelkie prawa zastrzeżone</div>
+            <div id="footer-credits"></div>
         </div>
 
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='./scripts/readJSON.js' rel="text/javascript"></script>
     <script src='./scripts/animation.js' rel="text/javascript"></script>
     
 </html>

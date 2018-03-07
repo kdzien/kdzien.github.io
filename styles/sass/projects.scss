@@ -47,21 +47,8 @@
                     }
                 }
             }
-            &.first{
-                background-image: url("../../images/easyshopping.png");
+            &:first-child{
                 flex: 0 0 66.666%;
-            }
-            &.second{
-                background-image: url("../../images/onlywins.png")
-            }
-            &.third{
-                background-image: url("../../images/eat24.png")
-            }
-            &.fourth{
-                background-image: url("../../images/mwatr.png")
-            }
-            &.fifth{
-                background-image: url("../../images/portfolio.png")
             }
 
         }

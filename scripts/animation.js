@@ -1,11 +1,5 @@
 $(function(){
 
-    //projkety
-    $(".project-small").hover(function(){
-        $(this).children(".info-overlay").slideToggle({duration:400})
-    },function(){
-        $(this).children(".info-overlay").slideToggle({duration:500})
-    })
 
     //inputy
     $(".form-element").append("<div class='input-outline' ></div>");
@@ -23,9 +17,9 @@ $(function(){
     })
     $(".tech").hover(function(){
         if($(this).index()%2!=0){ $(this).find(".tech-name").css({"background-color":"#333"}) }
-        $(this).find(".tech-name").slideToggle({duration:300})
+        $(this).find(".tech-name").stop().slideToggle({duration:300})
     },function(){
-        $(this).find(".tech-name").slideToggle({duration:300})
+        $(this).find(".tech-name").stop().slideToggle({duration:300})
     })
     //media
     let medias = [

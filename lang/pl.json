@@ -1,0 +1,44 @@
+{
+    "#hi":"Cześć, jestem",
+    "#about-title":"O MNIE",
+    "#tech-title":"TECHNOLOGIE I NARZĘDZIA",
+    "#projects-title":"PROJEKTY",
+    "#contact-title":"KONTAKT",
+    "#about-me":"Moja przygoda z tworzeniem stron zaczęła się rok temu przy okazji projektu zespołowego na uczelni. Przy tym projekcie zdecydowałem, że chcę się tym zajmować zawodowo. Cały czas się rozwijam, wykorzystując zdobytą wiedzę i ucząc się nowych technologii. Na koncie mam kilka własnych projektów przedstawionych poniżej.",
+    "#name-label":"Imię*",
+    "#topic-label":"Temat*",
+    "#message-label":"Wiadomość*",
+    "#footer-credits":"© 2018 Konrad Dzień - Wszelkie prawa zastrzeżone",
+    "#contact-info":"Dodatkowe informacje",
+    "#contact-form":"Formularz kontaktowy",
+    "#send-form-button":"WYŚLIJ",
+    "#experience-body":{
+        "title":"Doświadczenie",
+        "elements":[
+            {"span":"07.2017 - Obecnie",
+            "h4":"Junior Front-end Developer, InntradeSC",
+            "p":"Kodowanie szablonów na podstawie projektu graficznego, wprowadzenie i edycja treści na aukcjach internetowych, tworzenie rozwiązań do automatyzacji pracy"},
+            {"span":"11.2016 - 03.02.2017",
+            "h4":"Helpdesk, SI Consulting",
+            "p":"HelpDesk"}
+        ]
+    },
+    "#learn-body":{
+        "title":"Wykształcenie",
+        "elements":[
+            {"span":"09.2013 - 12.2017",
+            "h4":"Politechnika Wrocławska",
+            "p":"Ukończone studia inżynierskie<br>Kierunek:Informatyka<br>Specjalność:Inżyniera Systemów Informatycznych "},
+            {"span":"07.2016 - Obecnie",
+            "h4":"Projekty w ramach nauki",
+            "p":"Wykonane projekty w ramach nauki różnych technologii. Zachęcam do odwiedzenia mojego Githuba.<br><a>github.com/kdzien</a>"}
+        ]
+    },
+    "#projects-wrapper":[
+        {"img":"../images/easyshopping.png","text":"Tworzenie listy zakupów na podstawie tygodniowego planu żywienia","url":"https://ea5yshopping.herokuapp.com"},
+        {"img":"../../images/onlywins.png","text":"Aplikacja do wymiany typami bukmacherskimi","url":"https://onlywins.herokuapp.com"},
+        {"img":"../../images/eat24.png","text":"Aplikacja do wspólnego zamawiania posiłków","url":"https://eat24.herokuapp.com"},
+        {"img":"../../images/mwatr.png","text":"Strona zespołu muzycznego","url":"https://kdzien.github.io"},
+        {"img":"../../images/portfolio.png","text":"Portfolio","url":"https://kdzien.github.io"}
+    ]
+}

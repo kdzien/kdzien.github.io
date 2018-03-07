@@ -45,14 +45,5 @@
           @media only screen and (max-width: 768px) {
             #projects #projects-wrapper .project-small .info-overlay i {
               font-size: 28px; } }
-      #projects #projects-wrapper .project-small.first {
-        background-image: url("../../images/easyshopping.png");
+      #projects #projects-wrapper .project-small:first-child {
         flex: 0 0 66.666%; }
-      #projects #projects-wrapper .project-small.second {
-        background-image: url("../../images/onlywins.png"); }
-      #projects #projects-wrapper .project-small.third {
-        background-image: url("../../images/eat24.png"); }
-      #projects #projects-wrapper .project-small.fourth {
-        background-image: url("../../images/mwatr.png"); }
-      #projects #projects-wrapper .project-small.fifth {
-        background-image: url("../../images/portfolio.png"); }
