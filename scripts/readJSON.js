@@ -1,7 +1,9 @@
 $(document).ready(function() {
     
     $.getJSON('../lang/pl.json', function(data) {
+        let i=0;
         $.each(data, function(id, value) {
+            i++;
             if(id==="#experience-body" || id==="#learn-body"){
                 $(id).find(".section-header").html(value.title)
                 $.each(value.elements,function(index,element){
@@ -32,5 +34,8 @@ $(document).ready(function() {
                 $(id).html(value)
             }
         })
+        if(i==Object.keys(data).length){
+            $("body").fadeIn(200)
+        }
     });
 });

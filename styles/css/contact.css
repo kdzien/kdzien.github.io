@@ -1,11 +1,11 @@
 #contact {
   background-image: url("../../images/about-bcg.png");
-  background-color: white;
-  padding-bottom: 40px; }
+  background-color: white; }
   #contact #contact-wrapper {
     display: flex;
     flex-flow: row wrap; }
     #contact #contact-wrapper .contact-form, #contact #contact-wrapper .contact-information {
+      position: relative;
       flex: 0 0 50% !important; }
       @media only screen and (max-width: 768px) {
         #contact #contact-wrapper .contact-form, #contact #contact-wrapper .contact-information {
@@ -50,6 +50,8 @@
                 color: white !important; }
               #contact #contact-wrapper .contact-form .form-wrapper .info a .mediax:not(:hover), #contact #contact-wrapper .contact-information .form-wrapper .info a .mediax:not(:hover) {
                 color: inherit; }
+          #contact #contact-wrapper .contact-form .form-wrapper .info:last-child, #contact #contact-wrapper .contact-information .form-wrapper .info:last-child {
+            padding-bottom: 20px; }
         @media only screen and (max-width: 768px) {
           #contact #contact-wrapper .contact-form .form-wrapper, #contact #contact-wrapper .contact-information .form-wrapper {
             width: 70%; } }
@@ -85,11 +87,9 @@
             width: 100%;
             border: none;
             padding: 20px;
+            margin-bottom: 20px;
             background-color: white;
             color: #e4173e;
             font-size: 24px;
             font-weight: 700;
             font-family: "Muli", sans-serif; }
-    @media only screen and (max-width: 768px) {
-      #contact #contact-wrapper .contact-information {
-        border-top: 1px solid #e4173e; } }

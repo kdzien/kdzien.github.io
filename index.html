@@ -24,7 +24,7 @@
 
         <div id="about">
             <div class="title" id="about-title"></div>
-            <div id="about-wrapper">
+            <div id="about-wrapper" data-content="wrapper">
                 <div id="about-info">
                     <img src="../../images/me.png" />
                     <div id="about-info-wrapper">
@@ -50,7 +50,7 @@
 
         <div id="technologies">
                 <div class="title white" id="tech-title"></div>
-                <div class="technologies-wrapper">
+                <div class="technologies-wrapper" data-content="wrapper">
                     <div class="row-t row-3">
                         <div class="tech" data-tech="AngularJS"><img src="../../images/technologies/angular.png" /></div>
                         <div class="tech" data-tech="Bootstrap"><img src="../../images/technologies/bootstrap.png" /></div>
@@ -76,18 +76,32 @@
         </div>
 
         <div id="projects">
-                <div class="title white" id="projects-title"></div>
-                <div id="projects-wrapper">
-                </div>
+            <div class="title white" id="projects-title"></div>
+            <div id="projects-wrapper" data-content="wrapper"></div>
         </div>
         
         <div id="contact">
             <div class="title" id="contact-title"></div>
-            <div id="contact-wrapper">
+            <div id="contact-wrapper" data-content="wrapper">
+                <div class="contact-information">
+                    <div class="section-header" style="letter-spacing:0">Konrad Dzień</div>
+                    <div class="form-wrapper">
+                        <div class="info">
+                            <a href="https://facebook.com/dzieniu" target="_blank"><div class="mediax facebook"><i class="fab fa-facebook-f"></i></div></a>
+                            <a href="https://github.com/kdzien" target="_blank"><div class="mediax github"><i class="fab fa-github"></i></div></a>
+                            <a href="https://linkedin.com/profile/dzienkonrad" target="_blank"><div class="mediax linkedin"><i class="fab fa-linkedin-in"></i></div></a>
+                        </div>
+                        <div class="info">
+                            <div class="mail">dzien.konrad@gmail.com</div>
+                            <div class="phone">533 830 555</div>
+                        </div>
+                    </div>
+                </div>
                 <div class="contact-form">
+                <div id="send-waiting"><div class="circle-of-pain"></div></div>
                     <div class="section-header " id="contact-form"></div>
                     <div class="form-wrapper">
-                        <form>  
+                        <form method="post">  
                             <div class="form-element">
                                 <div class="label" id="name-label"></div>
                                 <input id="name-input" requierd />
@@ -104,23 +118,8 @@
                                 <div class="label" id="message-label"></div>
                                 <textarea id="message-input" rows="10" required></textarea>
                             </div>
-                            <button id="send-form-button" type ="submit" disabled></button>
+                            <button id="send-form-button" type="button" onclick="return sendEmail()" disabled></button>
                         </form>
-                    </div>
-                </div>
-                <div class="contact-information">
-                    <div class="section-header " id="contact-info"></div>
-                    <div class="form-wrapper">
-                        <div class="name">Konrad Dzień</div>
-                        <div class="info">
-                            <a href="https://facebook.com/dzieniu" target="_blank"><div class="mediax facebook"><i class="fab fa-facebook-f"></i></div></a>
-                            <a href="https://github.com/kdzien" target="_blank"><div class="mediax github"><i class="fab fa-github"></i></div></a>
-                            <a href="https://linkedin.com/profile/dzienkonrad" target="_blank"><div class="mediax linkedin"><i class="fab fa-linkedin-in"></i></div></a>
-                        </div>
-                        <div class="info">
-                            <div class="mail">dzien.konrad@gmail.com</div>
-                            <div class="phone">533 830 555</div>
-                        </div>
                     </div>
                 </div>
             </div>

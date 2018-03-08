@@ -2,6 +2,8 @@
 @import 'mixins.scss';
 
 #welcome{
+    overflow:hidden;
+    position:relative;
     @include full-size();
     background-color:$background-color;
     #head{
@@ -20,6 +22,7 @@
         }
     }
     #in-icon{
+        cursor:pointer;
         @include middle-bottom-position(0);
         i{
             @include custom-font($first-color,80px);

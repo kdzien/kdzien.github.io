@@ -49,10 +49,32 @@ function solveButton(inputss,button){
     status==true ?button.css({"background-color":"#e4173e","color":"white"}).prop('disabled', false):button.css({"background-color":"white","color":"#e4173e"}).prop('disabled', true)
 }
 
-$("#send-form-button").submit(function(){
-    emailjs.send("gmail","template_3WfbauCe",{name: nameInput.value, notes: messageInput.value+emailInput.value})
+
+function sendEmail(){
+    event.preventDefault();
+    let sendOverlay="#send-waiting"
+    let name = $("#name-input").val()
+    let email = $("#email-input").val()
+    let topic = $("#topic-input").val()
+    let message = $("#message-input").val()
+    $(sendOverlay).fadeIn(200);
+    emailjs.send("gmail","template_3WfbauCe",{topic: topic,email:email, notes:message, from:name})
 	.then(function(response) {
+        $(sendOverlay).find(".circle-of-pain").hide()
+        $(sendOverlay).append(`<div id="text">Wysłano</div>`)
+        $.each(inputs, function(key,value){
+            $(key).val('');
+            $(key).parent().find(".correct-label").animate({
+                "width":"0px"
+            },{duration:200,queue:false})
+        })
+        solveButton(inputs,$("#send-form-button"))
+        $(sendOverlay).delay(1000).fadeOut(500,function(){
+            $(sendOverlay).find(".circle-of-pain").show()
+            $(sendOverlay).find(`#text`).remove()
+
+        })
 	}, function(err) {
-        
-	});
-})
+        console.log(err)
+    });
+}

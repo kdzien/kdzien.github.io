@@ -36,7 +36,6 @@
             .tech{
                 img{
                     filter: grayscale(80%);
-                    width:150px;
                     @include middle-position(relative);
                     transform:translate(-50%, -50%) rotate(-45deg) ;
                     
@@ -46,6 +45,9 @@
                         transition:0.3s;
                         filter: grayscale(0%);
                         width:80px;
+                        @include respond-to(phones){
+                            width:50px;
+                        }
                     }
                 }
                 &:not(:hover){
@@ -53,6 +55,9 @@
                         transition:0.3s;
                         filter: grayscale(80%);
                         width:150px;
+                        @include respond-to(phones){
+                            width:80px;
+                        }
                     }
                 }
                 @include respond-to(phones){
@@ -77,8 +82,17 @@
                 background-color:transparentize($first-color,0.2);
                 cursor: context-menu;
                 display:none;
+                @include respond-to(phones){
+                    height:auto;
+                    @include custom-font(white,10px);
+                }
             }
-       
+       &:first-child{
+            padding-top:20px;
+       }
+       &:last-child{
+            padding-bottom:20px;
+       }
        }
     }
 }

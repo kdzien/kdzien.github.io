@@ -4,8 +4,10 @@
 body{
     @include clear-margin();
     font-family: $head-font !important;
+    display:none;
 }
 .title{
+    cursor:pointer;
     @include title-font();
     @include respond-to(phones){
         font-size:xx-large;
@@ -56,6 +58,26 @@ body{
     width:0px;
     i{
         font-size:42px;
-        color:#2fd64d;
+        color:$success-color;
     }
+}
+#send-waiting{
+    
+    display:none;
+    z-index: 9999;
+    position:absolute;
+    width:100%;height:100%;
+    background-color:rgba(0,0,0,0.7);
+    #text{
+        @include middle-position(); 
+        @include custom-font($success-color,25px,600);
+    }
+}
+.circle-of-pain{
+    width:100px;height:100px;
+    @include middle-position();
+    border:solid 3px $success-color;
+    border-right:2px solid rgba(0,0,0,0);
+    border-radius:50%;
+    animation:rotate 1.5s linear infinite;
 }

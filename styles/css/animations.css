@@ -9,3 +9,9 @@
     width: 100%; }
   to {
     width: 0; } }
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg); } }

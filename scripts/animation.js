@@ -1,6 +1,15 @@
 $(function(){
+    $('#in-icon').bind("click", function () {
+        $(this).hide().parent().slideUp(500);
+    });
 
+    $('[data-content="wrapper"]').hide(); 
+    $(".title").click(function(){  
+        $('[data-content="wrapper"]').slideUp()
+        goToByScroll(this.id)
+        if (!$(this).next('[data-content="wrapper"]').is(':visible')){$(this).next('[data-content="wrapper"]').slideDown()}
 
+    })
     //inputy
     $(".form-element").append("<div class='input-outline' ></div>");
     $(".form-element").focusin(function(){
@@ -46,7 +55,9 @@ $(function(){
             },{duration:200,queue:false})
         })
     })
-
-
-    
 })
+function goToByScroll(id){
+    $('html,body').animate({
+        scrollTop: $("#"+id).offset().top},
+        'slow');
+  }
