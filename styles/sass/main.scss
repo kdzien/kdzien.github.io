@@ -34,7 +34,7 @@ body{
 .input-outline{
     @include custom-position(absolute,null,20px,null,null);
     width:0%;
-    height:1px;
+    height:2px;
     background-color:$first-color;
     z-index:999;
 }
@@ -51,9 +51,11 @@ body{
     @include  middle-bottom-position(0px);
 }
 .correct-label{
-    @include custom-position(absolute,10,null,null,-40);
+    overflow:hidden;
+    @include custom-position(absolute,14,null,100%,null);
+    width:0px;
     i{
-        font-size:0px;
+        font-size:42px;
         color:#2fd64d;
     }
 }

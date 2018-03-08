@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    
     $.getJSON('../lang/pl.json', function(data) {
         $.each(data, function(id, value) {
             if(id==="#experience-body" || id==="#learn-body"){
@@ -13,6 +14,7 @@ $(document).ready(function() {
                 })
             }
             else if(id=="#projects-wrapper"){
+                event.preventDefault();
                 $.each(value,function(index,elem){
                     $(id).append(
                         `<div class="project-small" style="background-image: url('${elem.img}')">
@@ -21,9 +23,9 @@ $(document).ready(function() {
                     )
                 })
                 $(".project-small").hover(function(){
-                    $(this).children(".info-overlay").stop().slideToggle({duration:400})
+                    $(this).children(".info-overlay").show().stop().animate({height:"100%"})
                 },function(){
-                    $(this).children(".info-overlay").stop().slideToggle({duration:500})
+                    $(this).children(".info-overlay").show().stop().animate({height:"0%"})
                 })
             }
             else{

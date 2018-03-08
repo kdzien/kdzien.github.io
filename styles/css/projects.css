@@ -19,10 +19,10 @@
           flex: 0 0 100% !important;
           height: 50vw; } }
       #projects #projects-wrapper .project-small .info-overlay {
-        display: none;
+        overflow: hidden;
         position: relative;
         width: 100%;
-        height: 100%;
+        height: 0%;
         background-color: rgba(33, 33, 33, 0.8); }
         #projects #projects-wrapper .project-small .info-overlay div {
           width: 80%;
@@ -46,4 +46,4 @@
             #projects #projects-wrapper .project-small .info-overlay i {
               font-size: 28px; } }
       #projects #projects-wrapper .project-small:first-child {
-        flex: 0 0 66.666%; }
+        flex: 0 0 66.6666%; }
