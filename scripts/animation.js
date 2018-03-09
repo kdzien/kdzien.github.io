@@ -1,15 +1,15 @@
 $(function(){
+    $("#content-wrapper").hide()
     $('#in-icon').bind("click", function () {
-        $(this).hide().parent().slideUp(500);
+        $("#content-wrapper").show()
+        $(this).hide().parent().slideUp(700);
     });
 
     $('[data-content="wrapper"]').hide(); 
-    $(".title").click(function(){  
-        $('[data-content="wrapper"]').slideUp()
+    $(".title").click(function(){ 
         goToByScroll(this.id)
-        if (!$(this).next('[data-content="wrapper"]').is(':visible')){$(this).next('[data-content="wrapper"]').slideDown()}
-
-    })
+        $(this).next('[data-content="wrapper"]').slideToggle()
+    })  
     //inputy
     $(".form-element").append("<div class='input-outline' ></div>");
     $(".form-element").focusin(function(){
@@ -56,8 +56,7 @@ $(function(){
         })
     })
 })
-function goToByScroll(id){
-    $('html,body').animate({
-        scrollTop: $("#"+id).offset().top},
-        'slow');
+function goToByScroll(id,callback){
+    let scrollValue = $("#"+id).offset().top;
+    $('html,body').animate({scrollTop: scrollValue},'slow');
   }

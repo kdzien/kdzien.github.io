@@ -35,7 +35,7 @@ $(document).ready(function() {
             }
         })
         if(i==Object.keys(data).length){
-            $("body").fadeIn(200)
+            $("body").fadeIn(1)
         }
     });
 });

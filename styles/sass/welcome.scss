@@ -4,9 +4,11 @@
 #welcome{
     overflow:hidden;
     position:relative;
+    z-index:9999;
     @include full-size();
     background-color:$background-color;
     #head{
+        width:90%;
         @include middle-position();
         text-align:center;
         span{color:#cccccc}
@@ -14,11 +16,14 @@
             @include clear-margin();
             @include custom-font($first-color,78px,300,$head-font);
             @include respond-to(phones){
-                font-size:58px;
+                font-size:32px;
             }
         }
         h3{
             @include custom-font(white,24px,300,$head-font)
+            @include respond-to(phones){
+                font-size:17px;
+            }
         }
     }
     #in-icon{

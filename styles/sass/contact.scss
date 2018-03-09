@@ -3,7 +3,8 @@
 
 #contact{
     background-image:url("../../images/about-bcg.png");
-    background-color:white;
+    background-color:(255,255,255,0.1);
+    margin-bottom:50px;
     #contact-wrapper{
         display:flex;
         flex-flow: row wrap;

@@ -3,6 +3,8 @@
 
 #footer{
     background-color:$background-color;
+    position:fixed;bottom:0;
+    width:100%;
     #footer-credits{
         @include custom-font(white,12px,300,$head-font);
         @include title-position(20px);

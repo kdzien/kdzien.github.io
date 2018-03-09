@@ -1,5 +1,8 @@
 #footer {
-  background-color: #212121; }
+  background-color: #212121;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
   #footer #footer-credits {
     color: white;
     font-size: 12px;

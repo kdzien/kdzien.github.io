@@ -22,114 +22,119 @@
             
         </div>
 
-        <div id="about">
-            <div class="title" id="about-title"></div>
-            <div id="about-wrapper" data-content="wrapper">
-                <div id="about-info">
-                    <img src="../../images/me.png" />
-                    <div id="about-info-wrapper">
-                        <div class="separator"></div>
-                        <p id="about-me"></p>
-                        <div class="separator">
+        <div id="content-wrapper">
+            <div id="about">
+                <div class="title" id="about-title"></div>
+                <div id="about-wrapper" data-content="wrapper">
+                    <div id="about-info">
+                        <img src="../../images/me.png" />
+                        <div id="about-info-wrapper">
+                            <div class="separator"></div>
+                            <p id="about-me"></p>
+                            <div class="separator">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="experience-body">
+                        <div class="section-header"></div>
+                        <ul>
+                        </ul>
+                    </div>
+                    <div class="break-info work"><i class="material-icons">work</i></div>
+                    <div class="break-info learn"><i class="material-icons">school</i></div>
+                    <div id="learn-body">
+                        <div class="section-header"></div>
+                        <ul></ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="technologies">
+                    <div class="title white" id="tech-title"></div>
+                    <div class="technologies-wrapper" data-content="wrapper">
+                        <div class="row-t row-3">
+                            <div class="tech" data-tech="AngularJS"><img src="../../images/technologies/angular.png" /></div>
+                            <div class="tech" data-tech="Bootstrap"><img src="../../images/technologies/bootstrap.png" /></div>
+                            <div class="tech" data-tech="CSS3"><img src="../../images/technologies/css.png" /></div>
+                        </div>
+                        <div class="row-t row-4">
+                            <div class="tech" data-tech="Gulp"><img src="../../images/technologies/gulp.png" /></div>
+                            <div class="tech" data-tech="HTML"><img src="../../images/technologies/html.png" /></div>
+                            <div class="tech" data-tech="Gimp"><img src="../../images/technologies/gimp.png" /></div>
+                            <div class="tech" data-tech="NodeJS"><img src="../../images/technologies/nodejs.png" /></div>
+                        </div>                   
+                        <div class="row-t row-3">
+                            <div class="tech" data-tech="SaSS"><img src="../../images/technologies/sass.png" /></div>
+                            <div class="tech" data-tech="Git"><img src="../../images/technologies/git.png" /></div>
+                            <div class="tech" data-tech="Sublime"><img src="../../images/technologies/sublime.png" /></div>
+                        </div>
+                        <div class="row-t row-2">
+                            <div class="tech" data-tech="Ubuntu"><img src="../../images/technologies/ubuntu.png" /></div>
+                            
+                            <div class="tech" data-tech="JavaScript"><img src="../../images/technologies/js.png" /></div>
+                        </div>
+                    </div>
+            </div>
+    
+            <div id="projects">
+                <div class="title white" id="projects-title"></div>
+                <div id="projects-wrapper" data-content="wrapper"></div>
+            </div>
+            
+            <div id="contact">
+                <div class="title" id="contact-title"></div>
+                <div id="contact-wrapper" data-content="wrapper">
+                    <div class="contact-information">
+                        <div class="section-header" style="letter-spacing:0">Konrad Dzień</div>
+                        <div class="form-wrapper">
+                            <div class="info">
+                                <a href="https://facebook.com/dzieniu" target="_blank"><div class="mediax facebook"><i class="fab fa-facebook-f"></i></div></a>
+                                <a href="https://github.com/kdzien" target="_blank"><div class="mediax github"><i class="fab fa-github"></i></div></a>
+                                <a href="https://linkedin.com/profile/dzienkonrad" target="_blank"><div class="mediax linkedin"><i class="fab fa-linkedin-in"></i></div></a>
+                            </div>
+                            <div class="info">
+                                <div class="mail">dzien.konrad@gmail.com</div>
+                                <div class="phone">533 830 555</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                    <div id="send-waiting"><div class="circle-of-pain"></div></div>
+                        <div class="section-header " id="contact-form"></div>
+                        <div class="form-wrapper">
+                            <form method="post">  
+                                <div class="form-element">
+                                    <div class="label" id="name-label"></div>
+                                    <input id="name-input" requierd />
+                                </div>
+                                <div class="form-element">
+                                    <div class="label">E-mail*</div>
+                                    <input id="email-input" required />
+                                </div>
+                                <div class="form-element">
+                                    <div class="label" id="topic-label"></div>
+                                    <input id="topic-input" required />
+                                </div>
+                                <div class="form-element">
+                                    <div class="label" id="message-label"></div>
+                                    <textarea id="message-input" rows="10" required></textarea>
+                                </div>
+                                <button id="send-form-button" type="button" onclick="return sendEmail()" disabled></button>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <div id="experience-body">
-                    <div class="section-header"></div>
-                    <ul>
-                    </ul>
-                </div>
-                <div class="break-info work"><i class="material-icons">work</i></div>
-                <div class="break-info learn"><i class="material-icons">school</i></div>
-                <div id="learn-body">
-                    <div class="section-header"></div>
-                    <ul></ul>
+                <div>
+    
                 </div>
             </div>
-        </div>
-
-        <div id="technologies">
-                <div class="title white" id="tech-title"></div>
-                <div class="technologies-wrapper" data-content="wrapper">
-                    <div class="row-t row-3">
-                        <div class="tech" data-tech="AngularJS"><img src="../../images/technologies/angular.png" /></div>
-                        <div class="tech" data-tech="Bootstrap"><img src="../../images/technologies/bootstrap.png" /></div>
-                        <div class="tech" data-tech="CSS3"><img src="../../images/technologies/css.png" /></div>
-                    </div>
-                    <div class="row-t row-4">
-                        <div class="tech" data-tech="Gulp"><img src="../../images/technologies/gulp.png" /></div>
-                        <div class="tech" data-tech="HTML"><img src="../../images/technologies/html.png" /></div>
-                        <div class="tech" data-tech="Gimp"><img src="../../images/technologies/gimp.png" /></div>
-                        <div class="tech" data-tech="NodeJS"><img src="../../images/technologies/nodejs.png" /></div>
-                    </div>                   
-                    <div class="row-t row-3">
-                        <div class="tech" data-tech="SaSS"><img src="../../images/technologies/sass.png" /></div>
-                        <div class="tech" data-tech="Git"><img src="../../images/technologies/git.png" /></div>
-                        <div class="tech" data-tech="Sublime"><img src="../../images/technologies/sublime.png" /></div>
-                    </div>
-                    <div class="row-t row-2">
-                        <div class="tech" data-tech="Ubuntu"><img src="../../images/technologies/ubuntu.png" /></div>
-                        
-                        <div class="tech" data-tech="JavaScript"><img src="../../images/technologies/js.png" /></div>
-                    </div>
-                </div>
-        </div>
-
-        <div id="projects">
-            <div class="title white" id="projects-title"></div>
-            <div id="projects-wrapper" data-content="wrapper"></div>
+            <div id="footer">
+                <div id="footer-credits"></div>
+            </div>
         </div>
         
-        <div id="contact">
-            <div class="title" id="contact-title"></div>
-            <div id="contact-wrapper" data-content="wrapper">
-                <div class="contact-information">
-                    <div class="section-header" style="letter-spacing:0">Konrad Dzień</div>
-                    <div class="form-wrapper">
-                        <div class="info">
-                            <a href="https://facebook.com/dzieniu" target="_blank"><div class="mediax facebook"><i class="fab fa-facebook-f"></i></div></a>
-                            <a href="https://github.com/kdzien" target="_blank"><div class="mediax github"><i class="fab fa-github"></i></div></a>
-                            <a href="https://linkedin.com/profile/dzienkonrad" target="_blank"><div class="mediax linkedin"><i class="fab fa-linkedin-in"></i></div></a>
-                        </div>
-                        <div class="info">
-                            <div class="mail">dzien.konrad@gmail.com</div>
-                            <div class="phone">533 830 555</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                <div id="send-waiting"><div class="circle-of-pain"></div></div>
-                    <div class="section-header " id="contact-form"></div>
-                    <div class="form-wrapper">
-                        <form method="post">  
-                            <div class="form-element">
-                                <div class="label" id="name-label"></div>
-                                <input id="name-input" requierd />
-                            </div>
-                            <div class="form-element">
-                                <div class="label">E-mail*</div>
-                                <input id="email-input" required />
-                            </div>
-                            <div class="form-element">
-                                <div class="label" id="topic-label"></div>
-                                <input id="topic-input" required />
-                            </div>
-                            <div class="form-element">
-                                <div class="label" id="message-label"></div>
-                                <textarea id="message-input" rows="10" required></textarea>
-                            </div>
-                            <button id="send-form-button" type="button" onclick="return sendEmail()" disabled></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div>
-
-            </div>
         </div>
-        <div id="footer">
-            <div id="footer-credits"></div>
-        </div>
+        
         
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

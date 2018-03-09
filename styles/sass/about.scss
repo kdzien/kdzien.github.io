@@ -5,7 +5,7 @@
     height:auto;
     background-image:url("../../images/about-bcg.png");
     #about-wrapper{
-        
+        padding-bottom:30px;
         @include respond-to(phones){
             justify-content: center;
         }
@@ -15,7 +15,7 @@
             width:100%;
             @include clear-margin();
             padding-top:20px;
-            padding-bottom:50px;    
+            padding-bottom:30px;    
             text-align:center;        
             img{
                 border-radius:50%;
