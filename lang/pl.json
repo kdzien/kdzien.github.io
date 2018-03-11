@@ -37,7 +37,8 @@
         {"img":"../images/easyshopping.png","text":"Tworzenie listy zakupów na podstawie tygodniowego planu żywienia","url":"https://ea5yshopping.herokuapp.com"},
         {"img":"../../images/onlywins.png","text":"Aplikacja do wymiany typami bukmacherskimi","url":"https://onlywins.herokuapp.com"},
         {"img":"../../images/eat24.png","text":"Aplikacja do wspólnego zamawiania posiłków","url":"https://eat24.herokuapp.com"},
-        {"img":"../../images/mwatr.png","text":"Strona zespołu muzycznego","url":"https://kdzien.github.io"},
-        {"img":"../../images/portfolio.png","text":"Portfolio","url":"https://kdzien.github.io"}
+        {"img":"../../images/portfolio.png","text":"Portfolio","url":"https://kdzien.github.io"},
+        {"img":"../../images/mwatr.png","text":"Strona zespołu muzycznego(w budowie)","url":"images/mwatr-sample.png"}
+        
     ]
 }
