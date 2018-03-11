@@ -4,7 +4,6 @@
 #contact{
     background-image:url("../../images/about-bcg.png");
     background-color:(255,255,255,0.1);
-    margin-bottom:50px;
     #contact-wrapper{
         display:flex;
         flex-flow: row wrap;
@@ -25,10 +24,16 @@
                     display:flex;
                     flex-flow:row wrap;
                     .phone,.mail{
+                        @include respond-to(phones){
+                            font-size:14px;
+                        }
                         @include custom-font($background-color,17px,600);
                         flex:0 0 100%;
-                        &:nth-child(2){
-                            padding-top:10px;
+                        i{
+                            margin-right:10px;
+                            padding:10px;
+                            font-size:20px;
+                            border-right:solid 1px $first-color;
                         }
                     }
                     a{  

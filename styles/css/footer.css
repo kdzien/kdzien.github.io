@@ -1,13 +1,15 @@
 #footer {
+  display: none;
   background-color: #212121;
   position: fixed;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 9999; }
   #footer #footer-credits {
     color: white;
     font-size: 12px;
     font-weight: 300;
     font-family: "Muli", sans-serif;
     text-align: center;
-    padding: 20px 20px;
+    padding: 10px 10px;
     width: 100%; }

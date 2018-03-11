@@ -43,14 +43,14 @@
       #technologies .technologies-wrapper .row-t .tech:hover img {
         transition: 0.3s;
         filter: grayscale(0%);
-        width: 80px; }
+        width: 100%; }
         @media only screen and (max-width: 768px) {
           #technologies .technologies-wrapper .row-t .tech:hover img {
-            width: 50px; } }
+            width: 100%; } }
       #technologies .technologies-wrapper .row-t .tech:not(:hover) img {
         transition: 0.3s;
         filter: grayscale(80%);
-        width: 150px; }
+        width: 120px; }
         @media only screen and (max-width: 768px) {
           #technologies .technologies-wrapper .row-t .tech:not(:hover) img {
             width: 80px; } }

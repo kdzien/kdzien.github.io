@@ -44,9 +44,9 @@
                     img{
                         transition:0.3s;
                         filter: grayscale(0%);
-                        width:80px;
+                        width:100%;
                         @include respond-to(phones){
-                            width:50px;
+                            width:100%;
                         }
                     }
                 }
@@ -54,7 +54,7 @@
                     img{
                         transition:0.3s;
                         filter: grayscale(80%);
-                        width:150px;
+                        width:120px;
                         @include respond-to(phones){
                             width:80px;
                         }
