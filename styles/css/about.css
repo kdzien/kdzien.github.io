@@ -52,7 +52,7 @@
       width: 50%; }
       @media only screen and (max-width: 768px) {
         #about #about-wrapper #experience-body, #about #about-wrapper #learn-body, #about #about-wrapper .break-info {
-          width: auto; } }
+          width: 100%; } }
       #about #about-wrapper #experience-body i, #about #about-wrapper #learn-body i, #about #about-wrapper .break-info i {
         position: relative;
         top: 50%;
@@ -75,7 +75,7 @@
             padding-left: 20px; } }
         #about #about-wrapper #experience-body ul li, #about #about-wrapper #learn-body ul li, #about #about-wrapper .break-info ul li {
           position: relative;
-          border-left: solid #e4173e;
+          border-left: solid #e4173e 2px;
           padding-left: 20px; }
           #about #about-wrapper #experience-body ul li:before, #about #about-wrapper #learn-body ul li:before, #about #about-wrapper .break-info ul li:before {
             content: '';

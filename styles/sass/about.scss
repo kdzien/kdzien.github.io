@@ -63,7 +63,7 @@
         #experience-body,#learn-body,.break-info{
             width:50%;
             @include respond-to(phones){
-                width:auto;
+                width:100%;
             }
             i{
                 @include middle-position(relative);
@@ -84,7 +84,7 @@
                 @include clear-margin();
                 li{
                     position:relative;
-                    border-left: solid $first-color;
+                    border-left: solid $first-color 2px;
                     padding-left: 20px;
                     &:before{
                         content:'';

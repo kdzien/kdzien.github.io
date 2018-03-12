@@ -20,9 +20,10 @@
             }
         }
         h3{
-            @include custom-font(white,24px,300,$head-font)
+            @include custom-font(white,24px,300,$head-font);
             @include respond-to(phones){
-                font-size:17px;
+                font-size:12px;
+                margin-top:10px;
             }
         }
     }
@@ -30,10 +31,16 @@
         cursor:pointer;
         @include middle-bottom-position(0);
         i{
+            @include respond-to(phones){
+                font-size:32px;
+            }
             @include custom-font($first-color,80px);
             &:first-child{
                 @include middle-bottom-position(18);
                 color:white;
+                @include respond-to(phones){
+                    @include middle-bottom-position(8);
+                }
             }
         }
     }
