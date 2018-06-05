@@ -20,7 +20,7 @@ $(document).ready(function() {
                 event.preventDefault();
                 $.each(value,function(index,elem){
                     let i = new Image();
-                    i.src=elem.url;
+                    i.src=elem.img;
                     $(id).append(
                         `<div class="project-small" style="background-image: url('${elem.img}')">
                             <div class="info-overlay"><div>${elem.text}</div><a href="${elem.url}" target="_blank"><i class="material-icons">&#xE89E;</i></></div>
