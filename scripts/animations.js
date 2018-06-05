@@ -1,11 +1,10 @@
 $(function(){
+    
     $("#content-wrapper").hide()
     $('#in-icon').bind("click", function () {
         $("#content-wrapper").show()
         $(this).hide().parent().slideUp(700);
     });
-
-    $('[data-content="wrapper"]').hide(); 
     $(".title").click(function(){ 
         goToByScroll(this.id)
         $(this).next('[data-content="wrapper"]').slideToggle()
@@ -18,7 +17,12 @@ $(function(){
     $(".form-element").focusout(function(){
         $(this).find(".input-outline").animate({width:'0%'})
     })
-
+    //projectinfo
+    $(".fa-info-circle").hover(function(){
+        $(".projects-info").css({display:'inline'})
+    },function(){
+        $(".projects-info").css({display:'none'})
+    })
     //technologie
     $(".tech").each(function(){
         let tech_name = $(this).data("tech")

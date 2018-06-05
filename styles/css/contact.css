@@ -1,4 +1,5 @@
 #contact {
+  border-bottom: solid 2px #e83a5c;
   background-image: url("../../images/about-bcg.png");
   background-color: 255, 255, 255, 0.1; }
   #contact #contact-wrapper {

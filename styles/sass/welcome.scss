@@ -16,14 +16,14 @@
             @include clear-margin();
             @include custom-font($first-color,78px,300,$head-font);
             @include respond-to(phones){
-                font-size:32px;
+                font-size:46px;
             }
         }
         h3{
             @include custom-font(white,24px,300,$head-font);
             @include respond-to(phones){
-                font-size:12px;
-                margin-top:10px;
+                font-size:22px;
+                margin-top:15px;
             }
         }
     }
@@ -32,14 +32,14 @@
         @include middle-bottom-position(0);
         i{
             @include respond-to(phones){
-                font-size:32px;
+                font-size:82px;
             }
             @include custom-font($first-color,80px);
             &:first-child{
                 @include middle-bottom-position(18);
                 color:white;
                 @include respond-to(phones){
-                    @include middle-bottom-position(8);
+                    @include middle-bottom-position(16);
                 }
             }
         }

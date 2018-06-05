@@ -22,7 +22,7 @@
       font-family: "Muli", sans-serif; }
       @media only screen and (max-width: 768px) {
         #welcome #head h1 {
-          font-size: 32px; } }
+          font-size: 46px; } }
     #welcome #head h3 {
       color: white;
       font-size: 24px;
@@ -30,8 +30,8 @@
       font-family: "Muli", sans-serif; }
       @media only screen and (max-width: 768px) {
         #welcome #head h3 {
-          font-size: 12px;
-          margin-top: 10px; } }
+          font-size: 22px;
+          margin-top: 15px; } }
   #welcome #in-icon {
     cursor: pointer;
     position: absolute;
@@ -43,7 +43,7 @@
       font-size: 80px; }
       @media only screen and (max-width: 768px) {
         #welcome #in-icon i {
-          font-size: 32px; } }
+          font-size: 82px; } }
       #welcome #in-icon i:first-child {
         position: absolute;
         bottom: 18;
@@ -53,6 +53,6 @@
         @media only screen and (max-width: 768px) {
           #welcome #in-icon i:first-child {
             position: absolute;
-            bottom: 8;
+            bottom: 16;
             left: 50%;
             transform: translateX(-50%); } }

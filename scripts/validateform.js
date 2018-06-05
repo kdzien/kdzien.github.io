@@ -1,11 +1,4 @@
 "use strict";
-(function(){
-    emailjs.init("user_mEsxZor7yxoIoF2kJ0dT8");
-    emailjs.send("gmail","template_3WfbauCe",{topic: "visitor",email:"me", notes:"new visitor", from:"me"})
-	.then(function(response) {
-	}, function(err) {
-    });
-})();
 
 const inputs = {
     "#name-input": {regexp:/^.{5,20}$/,message:"5-20 znaków"},
