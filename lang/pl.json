@@ -37,6 +37,7 @@
         {"img":"../images/easyshopping.png","text":"Tworzenie listy zakupów na podstawie tygodniowego planu żywienia","url":"https://ea5yshopping.herokuapp.com"},
         {"img":"../../images/onlywins.png","text":"Aplikacja do wymiany typami bukmacherskimi","url":"https://onlywins.herokuapp.com"},
         {"img":"../../images/ligowo.png","text":"Typowanie zdarzeń danego wydarzenia(np. mundial) w grupie. (w budowie)","url":"https://kdzien.github.io/ligowo-app-dev"},
-        {"img":"../../images/portfolio.png","text":"Portfolio","url":"https://kdzien.github.io"}
+        {"img":"../../images/portfolio.png","text":"Portfolio","url":"https://kdzien.github.io"},
+        {"img":"../../images/eat24.png","text":"Aplikacja do wspólnego zamawiania posiłków","url":"https://www.youtube.com/watch?v=JXT7xX_IiKs"}
     ]
 }
