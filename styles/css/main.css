@@ -4,7 +4,6 @@ body {
   display: none; }
 
 .title {
-  cursor: pointer;
   color: #e4173e;
   font-size: 52;
   letter-spacing: 6px;
@@ -102,6 +101,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   border: solid 3px #35e417;
-  border-right: 2px solid rgba(0, 0, 0, 0);
+  border-right: 2px solid transparent;
   border-radius: 50%;
   animation: rotate 1.5s linear infinite; }

@@ -13,7 +13,8 @@
     transform: translate(-50%, -50%);
     text-align: center; }
     #welcome #head span {
-      color: #cccccc; }
+      color: #cccccc;
+      font-weight: 200; }
     #welcome #head h1 {
       margin: 0 auto;
       color: #e4173e;

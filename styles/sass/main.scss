@@ -7,7 +7,6 @@ body{
     display:none;
 }
 .title{
-    cursor:pointer;
     @include title-font();
     @include respond-to(phones){
         font-size:xx-large;

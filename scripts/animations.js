@@ -5,10 +5,6 @@ $(function(){
         $("#content-wrapper").show()
         $(this).hide().parent().slideUp(700);
     });
-    $(".title").click(function(){ 
-        goToByScroll(this.id)
-        $(this).next('[data-content="wrapper"]').slideToggle()
-    })  
     //inputy
     $(".form-element").append("<div class='input-outline' ></div>");
     $(".form-element").focusin(function(){
