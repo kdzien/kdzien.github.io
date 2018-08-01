@@ -5,6 +5,32 @@ $(function(){
         $("#content-wrapper").show()
         $(this).hide().parent().slideUp(700);
     });
+    //phones scroll
+    var updated=0,st;
+    $('body').on({
+        'touchmove': function(e) { 
+        st = $(this).scrollTop();
+        if(st > updated) {
+            console.log('down');
+        }
+        else {
+            if($("#content-wrapper").is(":hidden")){
+                $("#content-wrapper").show()
+                $("#in-icon").hide().parent().slideUp(700);
+            }
+        }
+        updated = st;
+        }
+    });
+    //desktop scroll
+    $(window).bind('mousewheel', function(e){
+        if($("#content-wrapper").is(":hidden")){
+            if(e.originalEvent.wheelDelta /120 < 0) {
+                $("#content-wrapper").show()
+                $("#in-icon").hide().parent().slideUp(700);
+            }
+        }
+    })
     //inputy
     $(".form-element").append("<div class='input-outline' ></div>");
     $(".form-element").focusin(function(){

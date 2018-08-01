@@ -2,7 +2,7 @@
   border-bottom: solid 2px #e83a5c;
   background-image: url("../../images/about-bcg.png");
   background-color: 255, 255, 255, 0.1;
-  padding-bottom: 100px; }
+  padding-bottom: 30px; }
   #contact #contact-wrapper {
     display: flex;
     flex-flow: row wrap; }
@@ -16,7 +16,7 @@
         width: 60%;
         margin: 0 auto; }
         #contact #contact-wrapper .contact-form .form-wrapper .name, #contact #contact-wrapper .contact-information .form-wrapper .name {
-          color: #212121;
+          color: #161616;
           font-size: 28px;
           font-weight: 600;
           font-family: "Muli", sans-serif;
@@ -27,13 +27,16 @@
           display: flex;
           flex-flow: row wrap; }
           #contact #contact-wrapper .contact-form .form-wrapper .info .phone, #contact #contact-wrapper .contact-form .form-wrapper .info .mail, #contact #contact-wrapper .contact-information .form-wrapper .info .phone, #contact #contact-wrapper .contact-information .form-wrapper .info .mail {
-            color: #212121;
+            color: #161616;
             font-size: 17px;
             font-weight: 300;
             flex: 0 0 100%; }
             @media only screen and (max-width: 768px) {
               #contact #contact-wrapper .contact-form .form-wrapper .info .phone, #contact #contact-wrapper .contact-form .form-wrapper .info .mail, #contact #contact-wrapper .contact-information .form-wrapper .info .phone, #contact #contact-wrapper .contact-information .form-wrapper .info .mail {
                 font-size: 14px; } }
+            #contact #contact-wrapper .contact-form .form-wrapper .info .phone span, #contact #contact-wrapper .contact-form .form-wrapper .info .mail span, #contact #contact-wrapper .contact-information .form-wrapper .info .phone span, #contact #contact-wrapper .contact-information .form-wrapper .info .mail span {
+              position: relative;
+              bottom: 1.5px; }
             #contact #contact-wrapper .contact-form .form-wrapper .info .phone i, #contact #contact-wrapper .contact-form .form-wrapper .info .mail i, #contact #contact-wrapper .contact-information .form-wrapper .info .phone i, #contact #contact-wrapper .contact-information .form-wrapper .info .mail i {
               margin-right: 10px;
               padding: 10px;
@@ -85,7 +88,7 @@
               border: none;
               border: solid;
               border-radius: 0;
-              border-color: #212121;
+              border-color: #161616;
               border-width: 1px; }
               #contact #contact-wrapper .contact-form .form-wrapper form .form-element input:focus, #contact #contact-wrapper .contact-form .form-wrapper form .form-element textarea:focus, #contact #contact-wrapper .contact-form .form-wrapper form .form-element button:focus, #contact #contact-wrapper .contact-information .form-wrapper form .form-element input:focus, #contact #contact-wrapper .contact-information .form-wrapper form .form-element textarea:focus, #contact #contact-wrapper .contact-information .form-wrapper form .form-element button:focus {
                 outline: none; }

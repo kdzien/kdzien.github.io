@@ -4,6 +4,7 @@
 #technologies{
     background: linear-gradient(rgba(61, 76, 104,0.4), rgba(61, 76, 104,0.4)), url("../../images/tech-bcg.png") no-repeat;
     background-size:cover;
+    background-attachment:fixed;
     height:max-content;
     .title {
         @include respond-to(phones){
@@ -13,7 +14,6 @@
     .technologies-wrapper{
         @media screen and (min-width:767px){
             padding-bottom: 120px;
-            padding-top: 40px;
         }
         @media screen and (max-width:768px){
             padding-bottom:0;

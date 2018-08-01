@@ -5,7 +5,7 @@
     border-bottom: solid 2px #e83a5c;
     background-image:url("../../images/about-bcg.png");
     background-color:(255,255,255,0.1);
-    padding-bottom:100px;
+    padding-bottom:30px;
     #contact-wrapper{
         display:flex;
         flex-flow: row wrap;
@@ -31,6 +31,10 @@
                         }
                         @include custom-font($background-color,17px,300);
                         flex:0 0 100%;
+                        span{
+                            position: relative;
+                            bottom: 1.5px;
+                        }
                         i{
                             margin-right:10px;
                             padding:10px;

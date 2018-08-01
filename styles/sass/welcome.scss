@@ -11,7 +11,7 @@
         width:90%;
         @include middle-position();
         text-align:center;
-        span{color:#cccccc; font-weight:200;}
+        span{color:whitesmoke; font-weight:200;}
         h1{
             @include clear-margin();
             @include custom-font($first-color,78px,300,$head-font);
@@ -24,7 +24,10 @@
             &:after{
                 content:"";
                 width:400px;height:1px;
-                background-color:white;
+                @include respond-to(phones){
+                    width:200px
+                }
+                background-color:whitesmoke;
                 @include middle-bottom-position();
             }
             &:before{
@@ -40,7 +43,7 @@
         }
         h3{
             margin-top:30px;
-            @include custom-font(#ccc,24px,300,$head-font);
+            @include custom-font(whitesmoke,24px,300,$head-font);
             @include respond-to(phones){
                 font-size:22px;
                 margin-top:15px;
@@ -49,19 +52,9 @@
     }
     #in-icon{
         cursor:pointer;
-        @include middle-bottom-position(0);
-        i{
-            @include respond-to(phones){
-                font-size:82px;
-            }
-            @include custom-font($first-color,80px);
-            &:first-child{
-                @include middle-bottom-position(18);
-                color:#ccc;
-                @include respond-to(phones){
-                    @include middle-bottom-position(16);
-                }
-            }
+        @include middle-bottom-position(-30);
+        img{
+            width:180px;
         }
     }
 }
