@@ -18,9 +18,29 @@
             @include respond-to(phones){
                 font-size:46px;
             }
+            padding-bottom:30px;
+            position:relative;
+            
+            &:after{
+                content:"";
+                width:400px;height:1px;
+                background-color:white;
+                @include middle-bottom-position();
+            }
+            &:before{
+                content:"";
+                width:15px;height:15px;
+                background-color:$background-color;
+                border:solid 1px $first-color;
+                z-index:999;
+                @include middle-bottom-position();
+                transform:translateY(-50%) rotate(45deg);
+                bottom:-14px;
+            }
         }
         h3{
-            @include custom-font(white,24px,300,$head-font);
+            margin-top:30px;
+            @include custom-font(#ccc,24px,300,$head-font);
             @include respond-to(phones){
                 font-size:22px;
                 margin-top:15px;
@@ -37,7 +57,7 @@
             @include custom-font($first-color,80px);
             &:first-child{
                 @include middle-bottom-position(18);
-                color:white;
+                color:#ccc;
                 @include respond-to(phones){
                     @include middle-bottom-position(16);
                 }

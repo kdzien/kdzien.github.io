@@ -17,15 +17,40 @@
       font-weight: 200; }
     #welcome #head h1 {
       margin: 0 auto;
-      color: #e4173e;
+      color: #f1574d;
       font-size: 78px;
       font-weight: 300;
-      font-family: "Muli", sans-serif; }
+      font-family: "Muli", sans-serif;
+      padding-bottom: 30px;
+      position: relative; }
       @media only screen and (max-width: 768px) {
         #welcome #head h1 {
           font-size: 46px; } }
+      #welcome #head h1:after {
+        content: "";
+        width: 400px;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%); }
+      #welcome #head h1:before {
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-color: #212121;
+        border: solid 1px #f1574d;
+        z-index: 999;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transform: translateY(-50%) rotate(45deg);
+        bottom: -14px; }
     #welcome #head h3 {
-      color: white;
+      margin-top: 30px;
+      color: #ccc;
       font-size: 24px;
       font-weight: 300;
       font-family: "Muli", sans-serif; }
@@ -40,7 +65,7 @@
     left: 50%;
     transform: translateX(-50%); }
     #welcome #in-icon i {
-      color: #e4173e;
+      color: #f1574d;
       font-size: 80px; }
       @media only screen and (max-width: 768px) {
         #welcome #in-icon i {
@@ -50,7 +75,7 @@
         bottom: 18;
         left: 50%;
         transform: translateX(-50%);
-        color: white; }
+        color: #ccc; }
         @media only screen and (max-width: 768px) {
           #welcome #in-icon i:first-child {
             position: absolute;

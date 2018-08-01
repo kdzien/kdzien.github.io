@@ -2,7 +2,7 @@
   height: auto;
   background-image: url("../../images/about-bcg.png"); }
   #about #about-wrapper {
-    padding-bottom: 30px;
+    padding-bottom: 100px;
     display: flex;
     flex-wrap: wrap; }
     @media only screen and (max-width: 768px) {
@@ -60,7 +60,7 @@
         transform: translate(-50%, -50%);
         color: #212121;
         font-size: 136px;
-        background: linear-gradient(to bottom right, #e4173e, #ea2b4f);
+        background: linear-gradient(to bottom right, #f1574d, #f36d65);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
       #about #about-wrapper #experience-body ul, #about #about-wrapper #learn-body ul, #about #about-wrapper .break-info ul {
@@ -75,11 +75,11 @@
             padding-left: 20px; } }
         #about #about-wrapper #experience-body ul li, #about #about-wrapper #learn-body ul li, #about #about-wrapper .break-info ul li {
           position: relative;
-          border-left: solid #e4173e 2px;
+          border-left: solid #f1574d 2px;
           padding-left: 20px; }
           #about #about-wrapper #experience-body ul li:before, #about #about-wrapper #learn-body ul li:before, #about #about-wrapper .break-info ul li:before {
             content: '';
-            border: solid 2px #e4173e;
+            border: solid 2px #f1574d;
             border-radius: 50%;
             width: 15px;
             height: 15px;

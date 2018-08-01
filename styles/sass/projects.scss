@@ -2,8 +2,9 @@
 @import 'mixins.scss';
 
 #projects{
+    padding-bottom: 132px;
     position:relative;
-    background-color:$background-color;
+    background-color:$first-color;
     .projects-info{
         position: absolute;
         top: 115px;
@@ -11,6 +12,7 @@
         max-width:350px;
         background-color: rgba(0,0,0,0.7);
         padding: 15px;
+        z-index:999;
         color: white;
         display:none;
     }
@@ -31,26 +33,21 @@
         }
     }
     #projects-wrapper{
-        width:100%;
-        height:auto;
-        display:flex;
-        flex-wrap:wrap;
         .project-small{
-            flex: 0 0 33.333%;
-            height:23vw;
+            margin:15px 0px;
+            height:200px;
             background-size:cover;
             background-repeat:no-repeat;
             background-position: center;
             @include respond-to(phones){
-                flex: 0 0 100% !important;
-                height:50vw
+
             }
             .info-overlay{
                 overflow:hidden;
                 position:relative;
-                width:100%;
-                height:0%;
-                background-color:transparentize($color: $background-color, $amount: 0.2);
+                width:0%;
+                height:100%;
+                background-color:transparentize($color: white, $amount: 0.2);
                 div{
                     width:80%;
                     @include middle-position(relative);
@@ -61,9 +58,10 @@
                     }
                 }
                 i{
-                    color:white;
-                    @include custom-position(absolute,null,5,null,5);
-                    font-size:36px;
+                    color:$first-color;
+                    @include middle-position();
+                    font-size:62px;
+                    transform:translate(-50%,-50%) rotate(-30deg);
                     @include respond-to(phones){
                         font-size:28px;
                     }

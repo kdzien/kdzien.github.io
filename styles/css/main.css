@@ -4,7 +4,7 @@ body {
   display: none; }
 
 .title {
-  color: #e4173e;
+  color: #f1574d;
   font-size: 52;
   letter-spacing: 6px;
   font-weight: 300;
@@ -46,7 +46,7 @@ body {
   bottom: 20px;
   width: 0%;
   height: 2px;
-  background-color: #e4173e;
+  background-color: #f1574d;
   z-index: 999; }
 
 .background-oly {

@@ -1,7 +1,8 @@
 #contact {
   border-bottom: solid 2px #e83a5c;
   background-image: url("../../images/about-bcg.png");
-  background-color: 255, 255, 255, 0.1; }
+  background-color: 255, 255, 255, 0.1;
+  padding-bottom: 100px; }
   #contact #contact-wrapper {
     display: flex;
     flex-flow: row wrap; }
@@ -28,7 +29,7 @@
           #contact #contact-wrapper .contact-form .form-wrapper .info .phone, #contact #contact-wrapper .contact-form .form-wrapper .info .mail, #contact #contact-wrapper .contact-information .form-wrapper .info .phone, #contact #contact-wrapper .contact-information .form-wrapper .info .mail {
             color: #212121;
             font-size: 17px;
-            font-weight: 600;
+            font-weight: 300;
             flex: 0 0 100%; }
             @media only screen and (max-width: 768px) {
               #contact #contact-wrapper .contact-form .form-wrapper .info .phone, #contact #contact-wrapper .contact-form .form-wrapper .info .mail, #contact #contact-wrapper .contact-information .form-wrapper .info .phone, #contact #contact-wrapper .contact-information .form-wrapper .info .mail {
@@ -37,7 +38,7 @@
               margin-right: 10px;
               padding: 10px;
               font-size: 20px;
-              border-right: solid 1px #e4173e; }
+              border-right: solid 1px #f1574d; }
           #contact #contact-wrapper .contact-form .form-wrapper .info a, #contact #contact-wrapper .contact-information .form-wrapper .info a {
             position: relative;
             margin-bottom: 15px;
@@ -67,7 +68,7 @@
           #contact #contact-wrapper .contact-form .form-wrapper form .form-element, #contact #contact-wrapper .contact-information .form-wrapper form .form-element {
             position: relative; }
             #contact #contact-wrapper .contact-form .form-wrapper form .form-element .label, #contact #contact-wrapper .contact-information .form-wrapper form .form-element .label {
-              color: #e4173e;
+              color: #f1574d;
               font-size: 15px;
               position: relative;
               top: 7px;
@@ -96,7 +97,7 @@
             padding: 20px;
             margin-bottom: 20px;
             background-color: white;
-            color: #e4173e;
+            color: #f1574d;
             font-size: 24px;
             font-weight: 700;
             font-family: "Muli", sans-serif; }

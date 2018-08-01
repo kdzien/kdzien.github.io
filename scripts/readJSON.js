@@ -22,15 +22,20 @@ $(document).ready(function() {
                     let i = new Image();
                     i.src=elem.img;
                     $(id).append(
-                        `<div class="project-small" style="background-image: url('${elem.img}')">
-                            <div class="info-overlay"><div>${elem.text}</div><a href="${elem.url}" target="_blank"><i class="material-icons">&#xE89E;</i></></div>
-                        </div>`
+                        `<div class="col-md-4">
+                        <div class="project-small" style="background-image: url('${elem.img}')">
+                            <div class="info-overlay"><a href="${elem.url}" target="_blank"><i class="material-icons">
+                            link
+                            </i></></div>
+                        </div>
+                        </div>
+                        `
                     )
                 })
                 $(".project-small").hover(function(){
-                    $(this).children(".info-overlay").show().stop().animate({height:"100%"})
+                    $(this).children(".info-overlay").show().stop().animate({width:"100%"})
                 },function(){
-                    $(this).children(".info-overlay").show().stop().animate({height:"0%"})
+                    $(this).children(".info-overlay").show().stop().animate({width:"0%"})
                 })
             }
             else{

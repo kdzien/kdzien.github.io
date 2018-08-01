@@ -2,7 +2,7 @@
 @import 'mixins.scss';
 
 #technologies{
-    background: linear-gradient(rgba(228, 23, 62, 0.4), rgba(228, 23, 62, 0.4)), url("../../images/tech-bcg.png") no-repeat;
+    background: linear-gradient(rgba(61, 76, 104,0.4), rgba(61, 76, 104,0.4)), url("../../images/tech-bcg.png") no-repeat;
     background-size:cover;
     height:max-content;
     .title {
@@ -12,7 +12,8 @@
     }
     .technologies-wrapper{
         @media screen and (min-width:767px){
-            padding-bottom:60px;
+            padding-bottom: 120px;
+            padding-top: 40px;
         }
         @media screen and (max-width:768px){
             padding-bottom:0;
