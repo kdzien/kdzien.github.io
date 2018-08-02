@@ -1,86 +1,111 @@
 #contact {
-  border-bottom: solid 2px #e83a5c;
-  background-image: url("../../images/about-bcg.png");
-  background-color: 255, 255, 255, 0.1;
-  padding-bottom: 30px; }
+  background-color: 255, 255, 255, 0.1; }
   #contact #contact-wrapper {
     display: flex;
     flex-flow: row wrap; }
+    #contact #contact-wrapper .contact-information {
+      background-color: #161616;
+      background: linear-gradient(rgba(22, 22, 22, 0.9), rgba(22, 22, 22, 0.9)), url("../../images/contact.jpg") no-repeat;
+      background-size: cover; }
     #contact #contact-wrapper .contact-form, #contact #contact-wrapper .contact-information {
-      position: relative;
-      flex: 0 0 50% !important; }
+      flex: 0 0 50% !important;
+      position: relative; }
       @media only screen and (max-width: 768px) {
         #contact #contact-wrapper .contact-form, #contact #contact-wrapper .contact-information {
           flex: 0 0 100% !important; } }
       #contact #contact-wrapper .contact-form .form-wrapper, #contact #contact-wrapper .contact-information .form-wrapper {
-        width: 60%;
-        margin: 0 auto; }
-        #contact #contact-wrapper .contact-form .form-wrapper .name, #contact #contact-wrapper .contact-information .form-wrapper .name {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+        #contact #contact-wrapper .contact-form .form-wrapper:first-child, #contact #contact-wrapper .contact-information .form-wrapper:first-child {
+          padding: 50px 0px !important; }
+        #contact #contact-wrapper .contact-form .form-wrapper .form-title, #contact #contact-wrapper .contact-information .form-wrapper .form-title {
+          text-align: center;
+          margin: 25px 0px;
           color: #161616;
-          font-size: 28px;
-          font-weight: 600;
-          font-family: "Muli", sans-serif;
-          margin: 0 auto;
-          width: max-content;
-          padding-bottom: 10px; }
-        #contact #contact-wrapper .contact-form .form-wrapper .info, #contact #contact-wrapper .contact-information .form-wrapper .info {
-          display: flex;
-          flex-flow: row wrap; }
-          #contact #contact-wrapper .contact-form .form-wrapper .info .phone, #contact #contact-wrapper .contact-form .form-wrapper .info .mail, #contact #contact-wrapper .contact-information .form-wrapper .info .phone, #contact #contact-wrapper .contact-information .form-wrapper .info .mail {
-            color: #161616;
-            font-size: 17px;
-            font-weight: 300;
+          font-size: 38px;
+          font-weight: 300; }
+        #contact #contact-wrapper .contact-form .form-wrapper .info, #contact #contact-wrapper .contact-form .form-wrapper .social, #contact #contact-wrapper .contact-information .form-wrapper .info, #contact #contact-wrapper .contact-information .form-wrapper .social {
+          margin: -0 auto;
+          display: table; }
+          #contact #contact-wrapper .contact-form .form-wrapper .info .usr, #contact #contact-wrapper .contact-form .form-wrapper .social .usr, #contact #contact-wrapper .contact-information .form-wrapper .info .usr, #contact #contact-wrapper .contact-information .form-wrapper .social .usr {
+            padding-left: 10px;
+            font-size: 27px !important; }
+          #contact #contact-wrapper .contact-form .form-wrapper .info .usr, #contact #contact-wrapper .contact-form .form-wrapper .info .phone, #contact #contact-wrapper .contact-form .form-wrapper .info .mail, #contact #contact-wrapper .contact-form .form-wrapper .social .usr, #contact #contact-wrapper .contact-form .form-wrapper .social .phone, #contact #contact-wrapper .contact-form .form-wrapper .social .mail, #contact #contact-wrapper .contact-information .form-wrapper .info .usr, #contact #contact-wrapper .contact-information .form-wrapper .info .phone, #contact #contact-wrapper .contact-information .form-wrapper .info .mail, #contact #contact-wrapper .contact-information .form-wrapper .social .usr, #contact #contact-wrapper .contact-information .form-wrapper .social .phone, #contact #contact-wrapper .contact-information .form-wrapper .social .mail {
+            padding-bottom: 15px;
+            color: white;
+            font-size: 20px;
+            font-weight: 200;
             flex: 0 0 100%; }
+            #contact #contact-wrapper .contact-form .form-wrapper .info .usr:first-child, #contact #contact-wrapper .contact-form .form-wrapper .info .phone:first-child, #contact #contact-wrapper .contact-form .form-wrapper .info .mail:first-child, #contact #contact-wrapper .contact-form .form-wrapper .social .usr:first-child, #contact #contact-wrapper .contact-form .form-wrapper .social .phone:first-child, #contact #contact-wrapper .contact-form .form-wrapper .social .mail:first-child, #contact #contact-wrapper .contact-information .form-wrapper .info .usr:first-child, #contact #contact-wrapper .contact-information .form-wrapper .info .phone:first-child, #contact #contact-wrapper .contact-information .form-wrapper .info .mail:first-child, #contact #contact-wrapper .contact-information .form-wrapper .social .usr:first-child, #contact #contact-wrapper .contact-information .form-wrapper .social .phone:first-child, #contact #contact-wrapper .contact-information .form-wrapper .social .mail:first-child {
+              padding-bottom: 15px; }
+            #contact #contact-wrapper .contact-form .form-wrapper .info .usr:last-child, #contact #contact-wrapper .contact-form .form-wrapper .info .phone:last-child, #contact #contact-wrapper .contact-form .form-wrapper .info .mail:last-child, #contact #contact-wrapper .contact-form .form-wrapper .social .usr:last-child, #contact #contact-wrapper .contact-form .form-wrapper .social .phone:last-child, #contact #contact-wrapper .contact-form .form-wrapper .social .mail:last-child, #contact #contact-wrapper .contact-information .form-wrapper .info .usr:last-child, #contact #contact-wrapper .contact-information .form-wrapper .info .phone:last-child, #contact #contact-wrapper .contact-information .form-wrapper .info .mail:last-child, #contact #contact-wrapper .contact-information .form-wrapper .social .usr:last-child, #contact #contact-wrapper .contact-information .form-wrapper .social .phone:last-child, #contact #contact-wrapper .contact-information .form-wrapper .social .mail:last-child {
+              padding-bottom: 0px; }
+            #contact #contact-wrapper .contact-form .form-wrapper .info .usr .content, #contact #contact-wrapper .contact-form .form-wrapper .info .phone .content, #contact #contact-wrapper .contact-form .form-wrapper .info .mail .content, #contact #contact-wrapper .contact-form .form-wrapper .social .usr .content, #contact #contact-wrapper .contact-form .form-wrapper .social .phone .content, #contact #contact-wrapper .contact-form .form-wrapper .social .mail .content, #contact #contact-wrapper .contact-information .form-wrapper .info .usr .content, #contact #contact-wrapper .contact-information .form-wrapper .info .phone .content, #contact #contact-wrapper .contact-information .form-wrapper .info .mail .content, #contact #contact-wrapper .contact-information .form-wrapper .social .usr .content, #contact #contact-wrapper .contact-information .form-wrapper .social .phone .content, #contact #contact-wrapper .contact-information .form-wrapper .social .mail .content {
+              padding-left: 50px;
+              font-size: 17px;
+              color: #f1574d;
+              font-weight: 400; }
             @media only screen and (max-width: 768px) {
-              #contact #contact-wrapper .contact-form .form-wrapper .info .phone, #contact #contact-wrapper .contact-form .form-wrapper .info .mail, #contact #contact-wrapper .contact-information .form-wrapper .info .phone, #contact #contact-wrapper .contact-information .form-wrapper .info .mail {
+              #contact #contact-wrapper .contact-form .form-wrapper .info .usr, #contact #contact-wrapper .contact-form .form-wrapper .info .phone, #contact #contact-wrapper .contact-form .form-wrapper .info .mail, #contact #contact-wrapper .contact-form .form-wrapper .social .usr, #contact #contact-wrapper .contact-form .form-wrapper .social .phone, #contact #contact-wrapper .contact-form .form-wrapper .social .mail, #contact #contact-wrapper .contact-information .form-wrapper .info .usr, #contact #contact-wrapper .contact-information .form-wrapper .info .phone, #contact #contact-wrapper .contact-information .form-wrapper .info .mail, #contact #contact-wrapper .contact-information .form-wrapper .social .usr, #contact #contact-wrapper .contact-information .form-wrapper .social .phone, #contact #contact-wrapper .contact-information .form-wrapper .social .mail {
                 font-size: 14px; } }
-            #contact #contact-wrapper .contact-form .form-wrapper .info .phone span, #contact #contact-wrapper .contact-form .form-wrapper .info .mail span, #contact #contact-wrapper .contact-information .form-wrapper .info .phone span, #contact #contact-wrapper .contact-information .form-wrapper .info .mail span {
+            #contact #contact-wrapper .contact-form .form-wrapper .info .usr span, #contact #contact-wrapper .contact-form .form-wrapper .info .phone span, #contact #contact-wrapper .contact-form .form-wrapper .info .mail span, #contact #contact-wrapper .contact-form .form-wrapper .social .usr span, #contact #contact-wrapper .contact-form .form-wrapper .social .phone span, #contact #contact-wrapper .contact-form .form-wrapper .social .mail span, #contact #contact-wrapper .contact-information .form-wrapper .info .usr span, #contact #contact-wrapper .contact-information .form-wrapper .info .phone span, #contact #contact-wrapper .contact-information .form-wrapper .info .mail span, #contact #contact-wrapper .contact-information .form-wrapper .social .usr span, #contact #contact-wrapper .contact-information .form-wrapper .social .phone span, #contact #contact-wrapper .contact-information .form-wrapper .social .mail span {
               position: relative;
-              bottom: 1.5px; }
-            #contact #contact-wrapper .contact-form .form-wrapper .info .phone i, #contact #contact-wrapper .contact-form .form-wrapper .info .mail i, #contact #contact-wrapper .contact-information .form-wrapper .info .phone i, #contact #contact-wrapper .contact-information .form-wrapper .info .mail i {
+              bottom: 2px; }
+            #contact #contact-wrapper .contact-form .form-wrapper .info .usr i, #contact #contact-wrapper .contact-form .form-wrapper .info .phone i, #contact #contact-wrapper .contact-form .form-wrapper .info .mail i, #contact #contact-wrapper .contact-form .form-wrapper .social .usr i, #contact #contact-wrapper .contact-form .form-wrapper .social .phone i, #contact #contact-wrapper .contact-form .form-wrapper .social .mail i, #contact #contact-wrapper .contact-information .form-wrapper .info .usr i, #contact #contact-wrapper .contact-information .form-wrapper .info .phone i, #contact #contact-wrapper .contact-information .form-wrapper .info .mail i, #contact #contact-wrapper .contact-information .form-wrapper .social .usr i, #contact #contact-wrapper .contact-information .form-wrapper .social .phone i, #contact #contact-wrapper .contact-information .form-wrapper .social .mail i {
               margin-right: 10px;
               padding: 10px;
-              font-size: 20px;
-              border-right: solid 1px #f1574d; }
-          #contact #contact-wrapper .contact-form .form-wrapper .info a, #contact #contact-wrapper .contact-information .form-wrapper .info a {
+              font-size: 20px; }
+        #contact #contact-wrapper .contact-form .form-wrapper .info, #contact #contact-wrapper .contact-information .form-wrapper .info {
+          padding-bottom: 25px;
+          position: relative; }
+          #contact #contact-wrapper .contact-form .form-wrapper .info:after, #contact #contact-wrapper .contact-information .form-wrapper .info:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 1px;
+            background-color: whitesmoke; }
+        #contact #contact-wrapper .contact-form .form-wrapper .social, #contact #contact-wrapper .contact-information .form-wrapper .social {
+          padding-top: 25px;
+          display: flex;
+          justify-content: center; }
+          #contact #contact-wrapper .contact-form .form-wrapper .social a, #contact #contact-wrapper .contact-information .form-wrapper .social a {
             position: relative;
-            margin-bottom: 15px;
-            flex: 0 0 33.33%;
-            height: 80px;
             transition: 0.2s; }
-            #contact #contact-wrapper .contact-form .form-wrapper .info a .mediax, #contact #contact-wrapper .contact-information .form-wrapper .info a .mediax {
-              height: 80px; }
-              #contact #contact-wrapper .contact-form .form-wrapper .info a .mediax i, #contact #contact-wrapper .contact-information .form-wrapper .info a .mediax i {
+            #contact #contact-wrapper .contact-form .form-wrapper .social a .mediax, #contact #contact-wrapper .contact-information .form-wrapper .social a .mediax {
+              transition: 0.2s;
+              height: 60px;
+              width: 60px;
+              border: solid 1px #ccc;
+              border-radius: 50%;
+              margin: 0px 30px; }
+              #contact #contact-wrapper .contact-form .form-wrapper .social a .mediax:hover, #contact #contact-wrapper .contact-information .form-wrapper .social a .mediax:hover {
+                background-color: whitesmoke; }
+              #contact #contact-wrapper .contact-form .form-wrapper .social a .mediax i, #contact #contact-wrapper .contact-information .form-wrapper .social a .mediax i {
+                transition: 0.2s;
+                color: #ccc;
                 position: relative;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                font-size: 40px;
+                font-size: 25px;
                 z-index: 999; }
-              #contact #contact-wrapper .contact-form .form-wrapper .info a .mediax:hover, #contact #contact-wrapper .contact-information .form-wrapper .info a .mediax:hover {
-                color: white !important; }
-              #contact #contact-wrapper .contact-form .form-wrapper .info a .mediax:not(:hover), #contact #contact-wrapper .contact-information .form-wrapper .info a .mediax:not(:hover) {
-                color: inherit; }
-          #contact #contact-wrapper .contact-form .form-wrapper .info:last-child, #contact #contact-wrapper .contact-information .form-wrapper .info:last-child {
-            padding-bottom: 20px; }
-        @media only screen and (max-width: 768px) {
-          #contact #contact-wrapper .contact-form .form-wrapper, #contact #contact-wrapper .contact-information .form-wrapper {
-            width: 70%; } }
         #contact #contact-wrapper .contact-form .form-wrapper form, #contact #contact-wrapper .contact-information .form-wrapper form {
-          margin: 0 auto; }
+          margin: 0 auto;
+          width: 70%; }
           #contact #contact-wrapper .contact-form .form-wrapper form .form-element, #contact #contact-wrapper .contact-information .form-wrapper form .form-element {
             position: relative; }
             #contact #contact-wrapper .contact-form .form-wrapper form .form-element .label, #contact #contact-wrapper .contact-information .form-wrapper form .form-element .label {
               color: #f1574d;
               font-size: 15px;
-              position: relative;
-              top: 7px;
-              bottom: initial;
-              left: 10;
-              right: initial;
               padding: 0;
               background-color: white; }
             #contact #contact-wrapper .contact-form .form-wrapper form .form-element input, #contact #contact-wrapper .contact-form .form-wrapper form .form-element textarea, #contact #contact-wrapper .contact-form .form-wrapper form .form-element button, #contact #contact-wrapper .contact-information .form-wrapper form .form-element input, #contact #contact-wrapper .contact-information .form-wrapper form .form-element textarea, #contact #contact-wrapper .contact-information .form-wrapper form .form-element button {
+              background-color: whitesmoke;
               margin: 0 auto;
               width: 100%;
               margin-bottom: 20px;
@@ -88,8 +113,8 @@
               border: none;
               border: solid;
               border-radius: 0;
-              border-color: #161616;
-              border-width: 1px; }
+              border-color: whitesmoke;
+              border-width: 2px; }
               #contact #contact-wrapper .contact-form .form-wrapper form .form-element input:focus, #contact #contact-wrapper .contact-form .form-wrapper form .form-element textarea:focus, #contact #contact-wrapper .contact-form .form-wrapper form .form-element button:focus, #contact #contact-wrapper .contact-information .form-wrapper form .form-element input:focus, #contact #contact-wrapper .contact-information .form-wrapper form .form-element textarea:focus, #contact #contact-wrapper .contact-information .form-wrapper form .form-element button:focus {
                 outline: none; }
             #contact #contact-wrapper .contact-form .form-wrapper form .form-element textarea, #contact #contact-wrapper .contact-information .form-wrapper form .form-element textarea {
@@ -97,8 +122,8 @@
           #contact #contact-wrapper .contact-form .form-wrapper form button, #contact #contact-wrapper .contact-information .form-wrapper form button {
             width: 100%;
             border: none;
+            margin-bottom: 45px;
             padding: 20px;
-            margin-bottom: 20px;
             background-color: white;
             color: #f1574d;
             font-size: 24px;

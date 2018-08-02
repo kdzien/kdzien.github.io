@@ -87,26 +87,29 @@
             </div>
             
             <div id="contact">
-                <div class="title" id="contact-title"></div>
                 <div id="contact-wrapper" data-content="wrapper">
                     <div class="contact-information">
-                        <div class="section-header" style="letter-spacing:0">Konrad Dzień</div>
                         <div class="form-wrapper">
                             <div class="info">
+                                <div class="usr">Konrad Dzień</div>
+                                <div class="mail"><i class="material-icons"> mail_outline </i><span>Adres email</span>
+                                <div class="content">dzien.konrad@gmail.com</div>
+                                </div>
+                                <div class="phone"><i class="material-icons">phone_android</i><span>Numer kontaktowy</span>
+                                <div class="content">+48 533 830 555 </div>
+                                </div>
+                            </div>                            
+                            <div class="social">
                                 <a href="https://facebook.com/dzieniu" target="_blank"><div class="mediax facebook"><i class="fab fa-facebook-f"></i></div></a>
                                 <a href="https://github.com/kdzien" target="_blank"><div class="mediax github"><i class="fab fa-github"></i></div></a>
                                 <a href="https://www.linkedin.com/in/dzienkonrad/" target="_blank"><div class="mediax linkedin"><i class="fab fa-linkedin-in"></i></div></a>
-                            </div>
-                            <div class="info">
-                                <div class="mail"><i class="material-icons"> mail_outline </i><span>dzien.konrad@gmail.com</span></div>
-                                <div class="phone"><i class="material-icons">phone_android</i><span>+48 533 830 555</span></div>
                             </div>
                         </div>
                     </div>
                     <div class="contact-form">
                     <div id="send-waiting"><div class="circle-of-pain"></div></div>
-                        <div class="section-header " id="contact-form"></div>
                         <div class="form-wrapper">
+                            <div class="form-title">Wyślij mi wiadomość!</div>
                             <form method="post">  
                                 <div class="form-element">
                                     <div class="label" id="name-label"></div>
@@ -145,6 +148,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src='./scripts/readJSON.js' rel="text/javascript"></script>
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init("user_mEsxZor7yxoIoF2kJ0dT8");
+        })();
+     </script>
     <script src='./scripts/validateform.js' rel="text/javascript"></script>
     <script src='./scripts/animations.js' rel="text/javascript"></script>
     

@@ -42,7 +42,7 @@ body {
       display: none; } }
 
 .input-outline {
-  position: absolute;
+  position: relative;
   bottom: 20px;
   width: 0%;
   height: 2px;

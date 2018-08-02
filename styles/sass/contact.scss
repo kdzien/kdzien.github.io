@@ -2,93 +2,128 @@
 @import 'mixins.scss';
 
 #contact{
-    border-bottom: solid 2px #e83a5c;
-    background-image:url("../../images/about-bcg.png");
     background-color:(255,255,255,0.1);
-    padding-bottom:30px;
     #contact-wrapper{
         display:flex;
         flex-flow: row wrap;
+        .contact-information{
+            background-color:$background-color;
+            background: linear-gradient(rgba(22, 22, 22,0.9), rgba(22, 22, 22,0.9)), url("../../images/contact.jpg") no-repeat;
+            background-size:cover;
+        }
         .contact-form,.contact-information{
-            position:relative;
             flex: 0 0 50% !important;
+            position:relative;
             @include respond-to(phones){
                 flex: 0 0 100% !important;
             }
             .form-wrapper{
-                .name{
-                    @include custom-font($background-color,28px,600,$head-font);
-                    @include clear-margin();
-                    width:max-content;
-                    padding-bottom:10px;
+                &:first-child{
+                    padding: 50px 0px !important;
                 }
-                .info{
-                    display:flex;
-                    flex-flow:row wrap;
-                    .phone,.mail{
+                
+                .form-title{
+                    text-align:center;
+                    margin:25px 0px;
+                    @include custom-font($background-color,38px,300)
+                }
+                @include middle-position(relative);
+                .info,.social{
+                    margin:-0 auto;
+                    display:table;
+                    .usr{
+                        padding-left:10px;
+                        font-size:27px !important;
+                    }
+                    .usr,.phone,.mail{
+                        padding-bottom:15px;
+                        &:first-child{
+                            padding-bottom:15px;
+                        }
+                        &:last-child{
+                            padding-bottom:0px;
+                        }
+                        .content{
+                            padding-left: 50px;
+                            font-size:17px;
+                            color:$first-color;
+                            font-weight:400;
+                        }
                         @include respond-to(phones){
                             font-size:14px;
                         }
-                        @include custom-font($background-color,17px,300);
+                        @include custom-font(white,20px,200);
                         flex:0 0 100%;
                         span{
                             position: relative;
-                            bottom: 1.5px;
+                            bottom: 2px;
                         }
                         i{
                             margin-right:10px;
                             padding:10px;
                             font-size:20px;
-                            border-right:solid 1px $first-color;
                         }
                     }
+                    
+                }
+                .info{
+                    padding-bottom:25px;
+                    position:relative;
+                    &:after{
+                        content:"";
+                        @include middle-bottom-position();
+                        width:200px;
+                        height:1px;
+                        background-color:whitesmoke;
+                    }
+                }
+                .social{
+                    padding-top:25px;
+                    display:flex;
+                    justify-content:center;
                     a{  
                         position:relative;
-                        margin-bottom:15px;
-                        flex: 0 0 33.33%;
-                        height:80px;
                         transition:0.2s;
                         .mediax{
-                            height:80px;
+                            transition:0.2s;
+                        &:hover{
+                            background-color:whitesmoke;
+                        }
+                            height:60px;
+                            width:60px;
+                            border:solid 1px #ccc;
+                            border-radius:50%;
+                            margin:0px 30px;
                             i{
+                                
+                            transition:0.2s;
+                                color:#ccc;
                                 @include middle-position(relative);
-                                font-size:40px;
+                                font-size:25px;
                                 z-index:999;
-                            }
-                            &:hover{
-                                color:white !important;
-                            }
-                            &:not(:hover){
-                                color:inherit;
                             }
                         }
                     }
-                    &:last-child{
-                        padding-bottom: 20px;
-                    }
                 }
-                width:60%;
-                @include respond-to(phones){
-                    width:70%
-                }
-                margin:0 auto;
                 form{
                     margin:0 auto;
+                    width:70%;
                     .form-element{
                         position:relative;
                         .label{
                             @include custom-font($first-color,15px);
-                            @include custom-position(relative,7px,initial,10,initial);
                             @include clear-padding("all");
                             background-color:white;
                         }
                         input,textarea,button{
+                            background-color:whitesmoke;
                             margin:0 auto;
                             width:100%;
                             margin-bottom:20px;
                             padding:10px 10px;
                             @include reset-border();
-                            @include default-border($background-color,1px,solid);
+                            
+                            @include default-border(whitesmoke,2px,solid);
                             &:focus{
                                 outline:none;
                             }
@@ -100,8 +135,8 @@
                     button{
                         width:100%;
                         @include reset-border();
+                        margin-bottom:45px;
                         padding:20px;
-                        margin-bottom:20px;
                         background-color:white;
                         @include custom-font($first-color,24px,700,$head-font);
                     }

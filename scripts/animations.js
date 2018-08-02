@@ -32,7 +32,7 @@ $(function(){
         }
     })
     //inputy
-    $(".form-element").append("<div class='input-outline' ></div>");
+    $(".form-element").append("<div class='input-outline'></div>");
     $(".form-element").focusin(function(){
         $(this).find(".input-outline").animate({width:'100%'},250)
     })
@@ -67,18 +67,10 @@ $(function(){
     
     
     medias.forEach(elem=>{
-        $(elem.class).find(".background-oly").css({"background-color":elem.color})
-        $(`.mediax${elem.class}`).css({color:elem.color})
         $(`.mediax${elem.class}`).hover(function(){
-            $(this).find(".background-oly").animate({
-                height:"100%",
-            },{duration:200,queue:false})
-
+            $(this).find("i").css({color:elem.color})
         },function(){
-            $(this).find(".background-oly").animate({
-                height:"3%",
-                color:elem.color
-            },{duration:200,queue:false})
+            $(this).find("i").css({color:"#ccc"})
         })
     })
 })
