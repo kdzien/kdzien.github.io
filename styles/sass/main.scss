@@ -4,7 +4,6 @@
 body{
     @include clear-margin();
     font-family: $head-font !important;
-    display:none;
 }
 .title{
     @include title-font();

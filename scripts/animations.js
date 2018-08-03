@@ -77,4 +77,15 @@ $(function(){
 function goToByScroll(id,callback){
     let scrollValue = $("#"+id).offset().top;
     $('html,body').animate({scrollTop: scrollValue},'slow');
-  }
+}
+
+  
+$(document).ready(function() {
+    $('#loading-modal').delay(500).hide(700,function(){
+        $("#welcome").find("#head").fadeIn(700,function(){
+            $("#welcome").find("#in-icon").fadeIn(1900,function(){
+            
+            })
+        })
+    });
+})

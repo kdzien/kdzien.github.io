@@ -1,10 +1,21 @@
 @import 'variables.scss';
 @import 'mixins.scss';
 
+#loading-modal{
+    @include middle-position();
+    display:block;
+    z-index:999;
+    width:100%;height:100%;
+    background-color:$background-color;
+    img{
+        @include middle-position();
+        width:100px;
+    }
+}
 #welcome{
     overflow:hidden;
     position:relative;
-    z-index:9999;
+    z-index:998;
     @include full-size();
     background-color:$background-color;
     #head{
@@ -37,8 +48,8 @@
                 border:solid 1px $first-color;
                 z-index:999;
                 @include middle-bottom-position();
-                transform:translateY(-50%) rotate(45deg);
-                bottom:-14px;
+                transform:translateX(-50%) rotate(45deg);
+                bottom:-7px;
             }
         }
         h3{
@@ -56,5 +67,8 @@
         img{
             width:180px;
         }
+    }
+    #head,#in-icon{
+        display:none;
     }
 }

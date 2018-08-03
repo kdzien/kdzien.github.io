@@ -1,5 +1,5 @@
-$(document).ready(function() {
-    
+
+$(function(){
     $.getJSON('../lang/pl.json', function(data) {
         let i=0;
         $.each(data, function(id, value) {
@@ -43,7 +43,7 @@ $(document).ready(function() {
             }
         })
         if(i==Object.keys(data).length){
-            $("body").fadeIn(1)
+
         }
     });
 });
