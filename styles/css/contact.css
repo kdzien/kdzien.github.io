@@ -7,6 +7,12 @@
       background-color: #161616;
       background: linear-gradient(rgba(22, 22, 22, 0.9), rgba(22, 22, 22, 0.9)), url("../../images/contact.jpg") no-repeat;
       background-size: cover; }
+      @media only screen and (max-width: 768px) {
+        #contact #contact-wrapper .contact-information {
+          order: 2; } }
+    @media only screen and (max-width: 768px) {
+      #contact #contact-wrapper .contact-form {
+        order: 1; } }
     #contact #contact-wrapper .contact-form, #contact #contact-wrapper .contact-information {
       flex: 0 0 50% !important;
       position: relative; }
@@ -85,6 +91,9 @@
               margin: 0px 30px; }
               #contact #contact-wrapper .contact-form .form-wrapper .social a .mediax:hover, #contact #contact-wrapper .contact-information .form-wrapper .social a .mediax:hover {
                 background-color: whitesmoke; }
+              @media only screen and (max-width: 768px) {
+                #contact #contact-wrapper .contact-form .form-wrapper .social a .mediax, #contact #contact-wrapper .contact-information .form-wrapper .social a .mediax {
+                  margin: 0px 10px; } }
               #contact #contact-wrapper .contact-form .form-wrapper .social a .mediax i, #contact #contact-wrapper .contact-information .form-wrapper .social a .mediax i {
                 transition: 0.2s;
                 color: #ccc;
