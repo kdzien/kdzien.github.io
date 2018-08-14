@@ -5,32 +5,8 @@ $(function(){
         $("#content-wrapper").show()
         $(this).hide().parent().slideUp(700);
     });
-    //phones scroll
-    var updated=0,st;
-    $('body').on({
-        'touchmove': function(e) { 
-        st = $(this).scrollTop();
-        if(st > updated) {
-            console.log('down');
-        }
-        else {
-            if($("#content-wrapper").is(":hidden")){
-                $("#content-wrapper").show()
-                $("#in-icon").hide().parent().slideUp(700);
-            }
-        }
-        updated = st;
-        }
-    });
-    //desktop scroll
-    $(window).bind('mousewheel', function(e){
-        if($("#content-wrapper").is(":hidden")){
-            if(e.originalEvent.wheelDelta /120 < 0) {
-                $("#content-wrapper").show()
-                $("#in-icon").hide().parent().slideUp(700);
-            }
-        }
-    })
+    
+    
     //inputy
     $(".form-element").append("<div class='input-outline'></div>");
     $(".form-element").focusin(function(){
@@ -78,13 +54,42 @@ function goToByScroll(id,callback){
     let scrollValue = $("#"+id).offset().top;
     $('html,body').animate({scrollTop: scrollValue},'slow');
 }
-
+function openByScroll() {
+        
+    //phones scroll
+    let updated=0,st;
+    
+    $('body').on({
+        'touchmove': function(e) { 
+        st = $(this).scrollTop();
+        if(st > updated) {
+            console.log('down');
+        }
+        else {
+            if($("#content-wrapper").is(":hidden")){
+                $("#content-wrapper").show()
+                $("#in-icon").hide().parent().slideUp(700);
+            }
+        }
+        updated = st;
+        }
+    });
+    //desktop scroll
+    $(window).bind('mousewheel', function(e){
+        if($("#content-wrapper").is(":hidden")){
+            if(e.originalEvent.wheelDelta /120 < 0) {
+                $("#content-wrapper").show()
+                $("#in-icon").hide().parent().slideUp(700);
+            }
+        }
+    })
+}
   
 $(document).ready(function() {
     $('#loading-modal').delay(500).hide(700,function(){
         $("#welcome").find("#head").fadeIn(700,function(){
             $("#welcome").find("#in-icon").fadeIn(1900,function(){
-            
+                openByScroll();
             })
         })
     });
