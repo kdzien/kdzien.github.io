@@ -86,11 +86,7 @@
               transition: 0.2s;
               height: 60px;
               width: 60px;
-              border: solid 1px #ccc;
-              border-radius: 50%;
               margin: 0px 30px; }
-              #contact #contact-wrapper .contact-form .form-wrapper .social a .mediax:hover, #contact #contact-wrapper .contact-information .form-wrapper .social a .mediax:hover {
-                background-color: whitesmoke; }
               @media only screen and (max-width: 768px) {
                 #contact #contact-wrapper .contact-form .form-wrapper .social a .mediax, #contact #contact-wrapper .contact-information .form-wrapper .social a .mediax {
                   margin: 0px 10px; } }

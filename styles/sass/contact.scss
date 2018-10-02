@@ -94,16 +94,11 @@
                         transition:0.2s;
                         .mediax{
                             transition:0.2s;
-                            &:hover{
-                                background-color:whitesmoke;
-                            }
                             @include respond-to(phones){
                                 margin:0px 10px;
                             }
                             height:60px;
                             width:60px;
-                            border:solid 1px #ccc;
-                            border-radius:50%;
                             margin:0px 30px;
                             i{
                                 

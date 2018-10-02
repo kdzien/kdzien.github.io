@@ -36,7 +36,7 @@ $(function(){
     let medias = [
         {class:".facebook",color:"#4267b2"},
         {class:".linkedin",color:"#0077b5"},
-        {class:".github",color:"#24292e"}
+        {class:".github",color:"#7f7f7f"}
     ]
 
     $(".mediax").append(`<div class='background-oly' ></div>`)
@@ -86,9 +86,9 @@ function openByScroll() {
 }
   
 $(document).ready(function() {
-    $('#loading-modal').delay(500).hide(700,function(){
+    $('#loading-modal').delay(1200).hide(500,function(){
         $("#welcome").find("#head").fadeIn(700,function(){
-            $("#welcome").find("#in-icon").fadeIn(1900,function(){
+            $("#welcome").find("#in-icon").fadeIn(400,function(){
                 openByScroll();
             })
         })
