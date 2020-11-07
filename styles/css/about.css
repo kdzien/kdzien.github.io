@@ -61,7 +61,7 @@
         color: #161616;
         font-size: 136px;
         background: linear-gradient(to bottom right, #f1574d, #f36d65);
-        -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent; }
       #about #about-wrapper #experience-body ul, #about #about-wrapper #learn-body ul, #about #about-wrapper .break-info ul {
         padding: 0;

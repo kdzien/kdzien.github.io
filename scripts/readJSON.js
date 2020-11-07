@@ -1,9 +1,7 @@
 
 $(function(){
     $.getJSON('../lang/pl.json', function(data) {
-        let i=0;
         $.each(data, function(id, value) {
-            i++;
             if(id==="#experience-body" || id==="#learn-body"){
                 $(id).find(".section-header").html(value.title)
                 $.each(value.elements,function(index,element){
@@ -42,8 +40,5 @@ $(function(){
                 $(id).html(value)
             }
         })
-        if(i==Object.keys(data).length){
-
-        }
     });
 });

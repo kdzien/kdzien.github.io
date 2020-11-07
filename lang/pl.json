@@ -33,10 +33,8 @@
         ]
     },
     "#projects-wrapper":[
-      
         {"img":"../images/decko.png","text":"Strona internetowa firmy sprzątającej","url":"http://deckoproto.cba.pl"},
         {"img":"../../images/portfolio.png","text":"Portfolio","url":"https://kdzien.github.io"},
-        {"img":"../images/mw.png","text":"Strona internetowa zespołu muzycznego","url":"https://kdzien.github.io/mw/"},    
         {"img":"../images/tripideas.png","text":"Pomysły na wycieczkę","url":"https://kdzien.github.io/TripIdeasprod"},
         {"img":"../images/easyshopping.png","text":"Tworzenie listy zakupów na podstawie tygodniowego planu żywienia","url":"https://ea5yshopping.herokuapp.com"},
         {"img":"../../images/ligowo.png","text":"Typowanie zdarzeń danego wydarzenia(np. mundial) w grupie. (w budowie)","url":"https://kdzien.github.io/ligowo-app-dev"},

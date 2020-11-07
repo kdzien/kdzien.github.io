@@ -30,10 +30,12 @@ gulp.task('watch',()=> {
     browserSync.init({
         server: "./"
     });
-    gulp.watch('./styles/sass/*.scss', ['sass']);
-    gulp.watch('./scripts/*.js', ['scripts']);
-    gulp.watch('./styles/css/*.css', ['mergecss']);
-    gulp.watch('*.html', ['html']);
+    gulp.watch('./styles/sass/*.scss', gulp.series('sass', function(){}));
+    gulp.watch('./scripts/*.js', gulp.series('scripts', function(){}));
+    gulp.watch('./styles/css/*.css', gulp.series('mergecss', function(){}));
+    gulp.watch('*.html', gulp.series('html', function(){}));
 });
 
-gulp.task('serve', ['watch']);  
+gulp.task('serve', gulp.series('watch', function(){
+
+}));

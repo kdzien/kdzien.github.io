@@ -69,7 +69,7 @@
                 @include middle-position(relative);
                 @include custom-font($background-color,136px);
                 background: linear-gradient(to bottom right, $first-color, lighten($first-color,5));
-                -webkit-background-clip: text;
+                background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
             ul{
